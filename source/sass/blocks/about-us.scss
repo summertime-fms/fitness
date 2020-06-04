@@ -1,0 +1,75 @@
+.about-us {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding-top: 116px;
+
+  @include container-desktop;
+}
+
+.about-us__image {
+  width: 660px;
+  height: 401px;
+}
+
+.about-us__video-link {
+  display: block;
+  width: 364px;
+
+  background-image: url("../img/video-layer.jpg");
+  height: 228px;
+  margin-top: -116px;
+  margin-left: 7%;
+}
+
+.about-us__video-overlay {
+  position: relative;
+  background-color: rgba(20, 54, 122, 0.5);
+  height: 100%;
+}
+
+.about-us__video-overlay::before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: calc(50% - 50px);
+  left: calc(50% - 50px);
+  width: 100px;
+  height: 100px;
+  background-image: url("../img/icon-play.svg");
+  background-position: center;
+}
+
+.about-us__text-content {
+  padding-top: 47px;
+  padding-right: 85px;
+  width: 355px;
+  padding-left: 60px;
+}
+
+.about-us__title {
+  padding-bottom: 8px;
+  font-family: $titles-font;
+  font-size: 49px;
+  line-height: 1;
+  color: $titles-color;
+  text-transform: uppercase;
+}
+
+.about-us__note {
+  display: block;
+  padding-bottom: 27px;
+  font-family: $content-font;
+  color: $titles-color;
+  font-size: 18px;
+  line-height: 1.5;
+}
+
+.about-us__text {
+  font-family: $content-font;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 24px;
+  margin: 10px 0;
+  color: $titles-color;
+}

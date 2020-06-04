@@ -1,5 +1,6 @@
 .intro {
   letter-spacing: 0.03em;
+  padding-bottom: 55px;
 
   color: #ffffff;
 }
@@ -19,11 +20,12 @@
 .intro__wrapper {
   display: flex;
   justify-content: space-between;
+  padding-bottom: 44px;
 
   @include container-desktop;
   background-image: url("../img/welcome-photo.png");
   background-repeat: no-repeat;
-  background-position: 75% 0;
+  background-position: 69.4% 0;
   background-size: 42% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -32,9 +34,8 @@
 }
 
 .intro__text-content {
-  position: relative;
-  padding-top: 122px;
-  width: 40%;
+  padding-top: 111px;
+  width: 34%;
 }
 
 .intro__socials {
@@ -49,7 +50,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: right;
-  padding-bottom: 10px;
+  padding-bottom: 14px;
 
   user-select: none;
 }
@@ -65,7 +66,7 @@
 
 .intro__services-list {
   position: relative;
-  bottom: 100px;
+  bottom: 94px;
   right: 260px;
 
 
@@ -97,6 +98,7 @@
 
 .intro__button {
   margin-left: auto;
+  margin-top: -15px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
