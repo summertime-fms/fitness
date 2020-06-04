@@ -7,17 +7,12 @@
   @include container-desktop;
 }
 
-.about-us__image {
-  width: 660px;
-  height: 401px;
-}
-
 .about-us__video-link {
   display: block;
   width: 364px;
 
   background-image: url("../img/video.jpg");
-  height: 228px;
+  min-height: 228px;
   margin-top: -116px;
   margin-left: 7%;
 
@@ -111,26 +106,83 @@
     display: none;
   }
 
-  .about-us__image {
-    width: 673px;
-    height: 345px;
+  .about-us__video-overlay {
+    height: 167px;
   }
 
   .about-us__video-link {
     width: 267px;
-    height: 169px;
+    min-height: 167px;
     margin-top: -87px;
     margin-left: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-size: 267px auto;
     }
+  }
 
-    .about-us__video-overlay::before {
-      width: 73px;
-      height: 73px;
-      top: calc(50% - 36px);
-      left: calc(50% - 36px);
+  .about-us__video-overlay::before {
+    width: 73px;
+    height: 73px;
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .about-us {
+    padding: 0;
+    padding-top: 20px;
+  }
+
+  .about-us__text--additional {
+    display: none;
+  }
+
+  .about-us__note {
+    padding-bottom: 13px;
+  }
+
+  .about-us__image-wrapper {
+    width: 100%;
+  }
+
+  .about-us__text-content {
+    width: 100%;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-top: 47px;
+    text-align: left;
+    padding-bottom: 22px;
+  }
+
+  .about-us__video-link {
+    background-image: url("../img/video-mobile.png");
+    margin: 0;
+    margin-top: 37px;
+    min-height: 168px;
+    background-size: 100% auto;
+    width: 100%;
+    background-repeat: no-repeat;
+
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/video-mobile@2x.png");
     }
+  }
+
+  .about-us__title {
+    font-size: 32px;
+  }
+
+  .about-us__text {
+    width: 90%;
+  }
+
+  .about-us__video-overlay::before {
+    top: calc(50% - 36px);
+    left: calc(50% - 36px);
+    width: 73px;
+    height: 73px;
   }
 }

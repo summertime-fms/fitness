@@ -175,14 +175,24 @@
 
   .intro__button {
     width: 100%;
+    margin-top: -27px;
   }
 
   .intro__text-content {
     width: 100%;
+    padding-top: 71px;
   }
 
   .intro__services-list {
     bottom: 78px;
     right: 180px;
+  }
+
+  .intro::before {
+    height: 491px;
+  }
+
+  .intro {
+    padding-bottom: 36px;
   }
 }
