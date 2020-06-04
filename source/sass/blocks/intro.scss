@@ -18,11 +18,11 @@
 
 .intro__wrapper {
   display: flex;
+  justify-content: space-between;
 
-  @include container;
+  @include container-desktop;
   background-image: url("../img/welcome-photo.png");
   background-repeat: no-repeat;
-  min-height: 600px;
   background-position: 75% 0;
 }
 
@@ -33,7 +33,6 @@
 }
 
 .intro__socials {
-  margin-left: auto;
   align-self: flex-end;
 }
 
@@ -90,4 +89,43 @@
 
 .intro__button {
   margin-left: auto;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .intro__wrapper {
+    @include container-tablet;
+    background-size: 43% auto;
+    background-position: 90% 25px;
+  }
+
+  .intro__town {
+    font-size: 34px;
+  }
+
+  .intro__title {
+    font-size: 86px;
+    padding-bottom: 60px;
+  }
+
+  .intro__button {
+    width: 63%;
+  }
+
+  .intro__text-content {
+    padding-top: 81px;
+    width: 47%;
+  }
+
+  .intro__socials {
+    display: none;
+  }
+
+  .intro__services-list {
+    left: 0;
+    bottom: 140px;
+  }
+
+  .intro::before {
+    height: 547px;
+  }
 }

@@ -3,7 +3,7 @@
 }
 
 .page-header__wrapper {
-  @include container;
+  @include container-desktop;
   display: flex;
   padding-top: 30px;
 }
@@ -24,4 +24,20 @@
 
 .page-header__phone:hover {
   color: #f2f2f2;
+}
+
+@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+  .page-header__wrapper {
+    @include container-tablet;
+  }
+
+  .page-header__logo-image {
+    width: 82px;
+    height: 17px;
+  }
+
+  .page-header__phone {
+    font-size: 24px;
+    letter-spacing: 0.02em;
+  }
 }

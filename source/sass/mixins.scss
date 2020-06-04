@@ -5,9 +5,16 @@
   list-style: none;
 }
 
-@mixin container {
-  max-width: $desktop-maxWidth;
+@mixin container-desktop {
+  max-width: $desktop-width;
   padding-left: 20px;
   padding-right: 20px;
+  margin: 0 auto;
+}
+
+@mixin container-tablet {
+  max-width: $tablet-width;
+  padding-left: 45px;
+  padding-right: 45px;
   margin: 0 auto;
 }
