@@ -101,15 +101,30 @@
   margin-top: -15px;
 }
 
+.intro__button:hover {
+  color: rgb(219, 212, 212);
+  border-color: rgb(219, 212, 212);
+}
+
+
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .intro {
+    padding-bottom: 35px;
+  }
+
+  .intro::before {
+    height: 554px;
+  }
+
   .intro__wrapper {
     @include container-tablet;
-    background-size: 43% auto;
-    background-position: 90% 25px;
+    background-size: 43% 86%;
+    background-position: 90% 19px;
   }
 
   .intro__town {
     font-size: 34px;
+    padding-bottom: 6px;
   }
 
   .intro__title {
@@ -119,12 +134,15 @@
   }
 
   .intro__button {
-    width: 63%;
+    width: 55%;
+    margin-top: -30px;
   }
 
+
   .intro__text-content {
-    padding-top: 81px;
-    width: 47%;
+    padding-top: 72px;
+    width: 48%;
+    padding-bottom: 27px;
   }
 
   .intro__socials {
@@ -132,12 +150,8 @@
   }
 
   .intro__services-list {
-    right: 200px;
+    right: 205px;
     bottom: 85px;
-  }
-
-  .intro::before {
-    height: 547px;
   }
 }
 
