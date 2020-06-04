@@ -26,9 +26,10 @@
   color: #f2f2f2;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .page-header__wrapper {
     @include container-tablet;
+    padding-top: 40px;
   }
 
   .page-header__logo-image {
@@ -39,5 +40,21 @@
   .page-header__phone {
     font-size: 24px;
     letter-spacing: 0.02em;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .page-header__wrapper {
+    @include container-mobile;
+    padding-top: 20px;
+  }
+
+  .page-header__logo-image {
+    width: 68px;
+    height: 15px;
+  }
+
+  .page-header__phone {
+    font-size: 20px;
   }
 }

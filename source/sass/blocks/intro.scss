@@ -48,7 +48,7 @@
 }
 
 .intro__title {
-  padding-bottom: 80px;
+
   font-family: $titles-font;
   font-size: 109px;
   line-height: 1;
@@ -57,9 +57,10 @@
 }
 
 .intro__services-list {
-  position: absolute;
-  bottom: 230px;
-  left: 17%;
+  position: relative;
+  bottom: 100px;
+  right: 260px;
+
 
   @include list-default;
   font-size: 14px;
@@ -91,7 +92,7 @@
   margin-left: auto;
 }
 
-@media (min-width: $tablet-width) and (max-width: $desktop-width) {
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .intro__wrapper {
     @include container-tablet;
     background-size: 43% auto;
@@ -104,7 +105,8 @@
 
   .intro__title {
     font-size: 86px;
-    padding-bottom: 60px;
+    padding: 0;
+    font-weight: 700;
   }
 
   .intro__button {
@@ -121,11 +123,43 @@
   }
 
   .intro__services-list {
-    left: 0;
-    bottom: 140px;
+    right: 200px;
+    bottom: 85px;
   }
 
   .intro::before {
     height: 547px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .intro__wrapper {
+    @include container-mobile;
+    background: none;
+  }
+
+  .intro__socials-list {
+    display: none;
+  }
+
+  .intro__town {
+    font-size: 28px;
+  }
+
+  .intro__title {
+    font-size: 78px;
+  }
+
+  .intro__button {
+    width: 100%;
+  }
+
+  .intro__text-content {
+    width: 100%;
+  }
+
+  .intro__services-list {
+    bottom: 154px;
+    right: 180px;
   }
 }

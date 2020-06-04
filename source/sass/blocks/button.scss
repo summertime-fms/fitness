@@ -12,3 +12,9 @@
   font-weight: 700;
   font-family: $content-font;
 }
+
+@media (min-width: $mobile-width) and (max-width: $tablet-width) {
+  .button {
+    max-width: unset;
+  }
+}

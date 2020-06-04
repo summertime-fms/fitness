@@ -18,3 +18,10 @@
   padding-right: 45px;
   margin: 0 auto;
 }
+
+@mixin container-mobile {
+  max-width: 100%;
+  padding-left: 15px;
+  padding-right: 15px;
+  margin: 0 auto;
+}
