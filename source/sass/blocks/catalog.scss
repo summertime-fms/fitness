@@ -1,5 +1,6 @@
 .catalog {
   background-color: #f8f9fc;
+  padding-bottom: 127px;
 }
 
 .catalog__wrapper {
@@ -9,7 +10,7 @@
 
 .catalog__title {
   text-align: center;
-  padding-bottom: 53px;
+  padding-bottom: 35px;
 }
 
 .catalog__inner {
@@ -23,7 +24,7 @@
   @include list-default;
   display: flex;
   margin-bottom: 40px;
-  padding-bottom: 15px;
+  padding-bottom: 11px;
   border-bottom: 2px solid rgba(120, 120, 120, 0.2);
 }
 
@@ -43,5 +44,13 @@
 
 .catalog__items {
   display: flex;
-  justify-content: center;
+  flex-wrap: wrap;
+  margin-right: -49px;
+  min-width: 1160px;
+}
+
+.catalog__item--active {
+  border: 8px solid transparent;
+  border-image: linear-gradient(-225deg, #b80027, #003d85) 30;
+  padding: 53px 75px;
 }
