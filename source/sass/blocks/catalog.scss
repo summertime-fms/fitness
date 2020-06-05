@@ -58,6 +58,9 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .catalog__items {
     flex-direction: column;
+    min-width: 60.72%;
+    max-width: 100%;
+    margin-right: 0;
   }
 
   .catalog__tab:not(:nth-child(3n)) {

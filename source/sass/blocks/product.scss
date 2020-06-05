@@ -81,7 +81,8 @@
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .product {
-    width: 442px;
+    width: 100%;
+    margin-right: 0;
     margin-bottom: 40px;
   }
 
