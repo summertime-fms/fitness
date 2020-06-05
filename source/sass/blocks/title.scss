@@ -1,4 +1,22 @@
 .title {
   margin: 0;
   letter-spacing: 0.03em;
+  font-family: $titles-font;
+  font-size: 49px;
+  line-height: 1;
+  color: $titles-color;
+  text-transform: uppercase;
+  user-select: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .title {
+    font-size: 42px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .title {
+    font-size: 32px;
+  }
 }

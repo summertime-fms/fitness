@@ -56,12 +56,13 @@
 }
 
 .intro__title {
-
+  margin: 0;
   font-family: $titles-font;
   font-size: 109px;
   line-height: 1;
   text-align: right;
   user-select: none;
+  letter-spacing: 0.03em;
 }
 
 .intro__services-list {

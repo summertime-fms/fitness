@@ -1,4 +1,5 @@
 .about-us {
+  padding-bottom: 120px;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
@@ -43,17 +44,12 @@
 .about-us__text-content {
   padding-top: 47px;
   padding-right: 85px;
-  width: 355px;
+  width: 43%;
   padding-left: 60px;
 }
 
 .about-us__title {
   padding-bottom: 8px;
-  font-family: $titles-font;
-  font-size: 49px;
-  line-height: 1;
-  color: $titles-color;
-  text-transform: uppercase;
 }
 
 .about-us__note {
@@ -82,7 +78,6 @@
   }
 
   .about-us__title {
-    font-size: 42px;
     text-align: center;
     padding-bottom: 11px;
   }
@@ -169,10 +164,6 @@
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-mobile@2x.png");
     }
-  }
-
-  .about-us__title {
-    font-size: 32px;
   }
 
   .about-us__text {
