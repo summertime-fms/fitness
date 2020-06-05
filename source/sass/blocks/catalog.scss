@@ -67,3 +67,40 @@
     padding-right: 54px;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .catalog {
+    padding-bottom: 42px;
+  }
+
+  .catalog__items {
+    margin: 0;
+    max-width: 100%;
+  }
+
+  .catalog__item {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .catalog__item--active {
+    padding: 44px 67px;
+  }
+
+  .catalog__wrapper {
+    @include container-mobile;
+    padding-top: 68px;
+  }
+
+  .catalog__title {
+    padding-bottom: 23px;
+  }
+
+  .catalog__tab a {
+    font-size: 16px;
+  }
+
+  .catalog__tabs {
+    margin-bottom: 35px;
+  }
+}

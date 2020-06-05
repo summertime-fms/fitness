@@ -90,3 +90,36 @@
     line-height: 29px;
   }
 }
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .product {
+    width: 100%;
+    padding: 51px 42px;
+  }
+
+  .product__title {
+    font-size: 22px;
+    line-height: 24px;
+  }
+
+  .product__note {
+    padding-bottom: 54px;
+  }
+
+  .product__price {
+    font-size: 48px;
+  }
+
+  .product__price-wrapper {
+    padding-bottom: 30px;
+  }
+
+  .product__price-wrapper::after {
+    font-size: 48px;
+  }
+
+  .product__price-wrapper::before {
+    font-size: 80px;
+    text-shadow: -16px -33px 0 #e8e8e8;
+  }
+}
