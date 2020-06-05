@@ -28,6 +28,7 @@
 
 .product__price {
   font-weight: 700;
+
   font-size: 60px;
   line-height: 1.5;
   color: #103aae;
@@ -53,6 +54,7 @@
 .product__price-wrapper::after {
   content: "    ₽";
   color: #102654;
+
   position: relative;
   z-index: 3;
   font-size: 60px;
@@ -75,4 +77,15 @@
   background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
   border: none;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .product {
+    width: 442px;
+    margin-bottom: 40px;
+  }
+
+  .product__title {
+    line-height: 29px;
+  }
 }

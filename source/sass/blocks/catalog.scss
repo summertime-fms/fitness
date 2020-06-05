@@ -46,11 +46,21 @@
   display: flex;
   flex-wrap: wrap;
   margin-right: -49px;
-  min-width: 1160px;
+  max-width: 1210px;
 }
 
 .catalog__item--active {
   border: 8px solid transparent;
   border-image: linear-gradient(-225deg, #b80027, #003d85) 30;
   padding: 53px 75px;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .catalog__items {
+    flex-direction: column;
+  }
+
+  .catalog__tab:not(:nth-child(3n)) {
+    padding-right: 54px;
+  }
 }
