@@ -4,9 +4,11 @@
 }
 
 .promo__wrapper {
-  display: flex;
-
   @include container-desktop;
+}
+
+.promo__inner {
+  display: flex;
   width: 1160px;
   background-image: url("../img/supergames-photo@1x.jpg"), linear-gradient(to right, #ed0233  44.6%, #000145 44.6%);
   background-repeat: no-repeat;
@@ -96,4 +98,102 @@
   font-size: 40px;
   line-height: 1.5;
   font-weight: 700;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .promo__wrapper {
+    @include container-tablet;
+    margin: 0;
+    max-width: unset;
+  }
+
+  .promo__title {
+    font-size: 52px;
+  }
+
+  .promo__inner {
+    width: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-size: 55%, 100%;
+    }
+  }
+
+  .promo__note {
+    font-size: 12px;
+    padding-bottom: 36px;
+  }
+
+  .promo__content {
+    padding: 51px 45px;
+  }
+
+  .promo__date-label {
+    font-size: 12px;
+  }
+
+  .promo__date--day span {
+    font-size: 10px;
+  }
+
+  .promo__date time {
+    font-size: 24px;
+  }
+
+  .promo__date--day b {
+    font-size: 24px;
+  }
+
+  .promo__button {
+    min-width: 202px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .promo__wrapper {
+    @include container-mobile;
+  }
+
+  .promo__inner {
+    width: 100%;
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/supergames-photo@2x.jpg"), linear-gradient(to bottom, #ed0233 50%, #000145 50%);
+      background-position: bottom, top;
+    }
+  }
+
+  .promo__content {
+    padding: 51px 44px;
+    width: 100%;
+  }
+
+  .promo__button {
+    min-width: 202px;
+  }
+
+  .promo__title {
+    font-size: 52px;
+  }
+
+  .promo__date--day span {
+    font-size: 10px;
+  }
+
+  .promo__date time {
+    font-size: 24px;
+  }
+
+  .promo__date--day b {
+    font-size: 24px;
+  }
+
+  .promo__date-label {
+    font-size: 12px;
+  }
+
+  .promo__note {
+    font-size: 12px;
+    padding-bottom: 36px;
+  }
 }

@@ -115,9 +115,12 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .catalog__items-group {
     flex-direction: column;
-    min-width: 60.72%;
-    max-width: 100%;
+    width: 57.6%;
     margin-right: 0;
+  }
+
+  .catalog__items {
+    align-items: center;
   }
 
   .catalog::after {
