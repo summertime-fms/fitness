@@ -23,13 +23,13 @@
   padding-bottom: 44px;
 
   @include container-desktop;
-  background-image: url("../img/welcome-photo.png");
+  background-image: url("../img/welcome-photo@1x.jpg");
   background-repeat: no-repeat;
   background-position: 69.4% 0;
   background-size: 42% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-image: url("../img/welcome-photo@2x.png");
+    background-image: url("../img/welcome-photo@2x.jpg");
   }
 }
 
