@@ -76,18 +76,24 @@
       <div class="catalog__wrapper">
       <h2 class="catalog__title title"  id="catalog">Абонементы</h2>
       <div class="catalog__inner">
+        <div class="catalog__tabs-control">
         <ul class="catalog__tabs">
-          <li class="catalog__tab">
+          <li class="catalog__tab catalog__tab--first">
             <a href="#">1 месяц</a>
           </li>
-          <li class="catalog__tab">
+          <li class="catalog__tab catalog__tab--second">
             <a href="#">6 месяцев</a>
           </li>
-          <li class="catalog__tab">
+          <li class="catalog__tab catalog__tab--third">
             <a href="#">12 месяцев</a>
           </li>
         </ul>
+        <div class="catalog__control">
+          <div class="catalog__toggler"></div>
+        </div>
+        </div>
         <div class="catalog__items">
+          <div class="catalog__items-group atalog__items-group--first">
           <article class="catalog__item product">
             <h3 class="product__title">С тренером</h3>
             <small class="product__note">12 занятий</small>
@@ -112,6 +118,59 @@
             </div>
             <a class="product__button button" href="#">Купить абонемент</a>
           </article>
+          </div>
+          <div class="catalog__items-group catalog__items-group--second">
+            <article class="catalog__item product">
+              <h3 class="product__title">С тренером</h3>
+              <small class="product__note">72 занятия</small>
+              <div class="product__price-wrapper" data-parent="25000">
+                <span class="product__price">25000</span>
+              </div>
+              <a class="product__button button" href="#">Купить абонемент</a>
+            </article>
+            <article class="catalog__item product catalog__item--active">
+              <h3 class="product__title">Дневной</h3>
+              <small class="product__note">С 8:00 до 17:00</small>
+              <div class="product__price-wrapper" data-parent="9000">
+                <span class="product__price">9000</span>
+              </div>
+              <a class="product__button button" href="#">Купить абонемент</a>
+            </article>
+            <article class="catalog__item product">
+              <h3 class="product__title">Полный день</h3>
+              <small class="product__note">С 8:00 до 22:00</small>
+              <div class="product__price-wrapper" data-parent="15000">
+                <span class="product__price">15000</span>
+              </div>
+              <a class="product__button button" href="#">Купить абонемент</a>
+            </article>
+            </div>
+            <div class="catalog__items-group catalog__items-group--third">
+              <article class="catalog__item product">
+                <h3 class="product__title">С тренером</h3>
+                <small class="product__note">150 занятий</small>
+                <div class="product__price-wrapper" data-parent="40000">
+                  <span class="product__price">40000</span>
+                </div>
+                <a class="product__button button" href="#">Купить абонемент</a>
+              </article>
+              <article class="catalog__item product catalog__item--active">
+                <h3 class="product__title">Дневной</h3>
+                <small class="product__note">С 8:00 до 17:00</small>
+                <div class="product__price-wrapper" data-parent="15700">
+                  <span class="product__price">15700</span>
+                </div>
+                <a class="product__button button" href="#">Купить абонемент</a>
+              </article>
+              <article class="catalog__item product">
+                <h3 class="product__title">Полный день</h3>
+                <small class="product__note">С 8:00 до 22:00</small>
+                <div class="product__price-wrapper" data-parent="40000">
+                  <span class="product__price">40000</span>
+                </div>
+                <a class="product__button button" href="#">Купить абонемент</a>
+              </article>
+              </div>
         </div>
       </div>
 </div>
