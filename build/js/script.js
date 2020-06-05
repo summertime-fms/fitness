@@ -25,12 +25,12 @@ tabs.onclick = function(evt) {
   if (!target) return;
 
   let tabsClientRect = this.getBoundingClientRect();
-  let tabsBorderLeft = tabsClientRect.x;
+  let tabsBorderLeft = tabsClientRect.left;
   let tabClientRect = target.getBoundingClientRect();
   let tabWidth = tabClientRect.width + "px";
 
   let targetClientRect = target.getBoundingClientRect();
-  let leftBorder = targetClientRect.x;
+  let leftBorder = targetClientRect.left;
   let x = leftBorder - tabsBorderLeft + "px";
 
   toggler.style.left = x;

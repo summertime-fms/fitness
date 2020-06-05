@@ -124,10 +124,6 @@
     }
   }
 
-  .catalog__tab:not(:nth-child(3n)) {
-    padding-right: 54px;
-  }
-
   .catalog__wrapper {
     padding-top: 99px;
   }
@@ -140,8 +136,12 @@
     font-size: 18px;
   }
 
-  .catalog__tabs {
-    margin-bottom: 45px;
+  .catalog__tabs-control {
+    width: 335px;
+  }
+
+  .catalog__control {
+    width: 334px;
   }
 }
 
@@ -181,7 +181,16 @@
     font-size: 16px;
   }
 
-  .catalog__tabs {
-    margin-bottom: 35px;
+  .catalog__tabs-control {
+    width: 290px;
+    padding-bottom: 33px;
+  }
+
+  .catalog__control {
+    width: 100%;
+  }
+
+  .catalog__items {
+    width: 100%;
   }
 }
