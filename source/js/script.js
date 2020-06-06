@@ -54,3 +54,23 @@ tabs.onclick = function(evt) {
     itemGroups[2].style.display ="flex";
   }
 }
+
+// const nextButton = document.querySelector(".coaches__button-next");
+// const slider = document.querySelector(".coaches__slider");
+// const sliderWrapper = document.querySelector(".coaches__slider-wrapper");
+
+// nextButton.onclick = function() {
+//   let sliderWrpClientRect = sliderWrapper.getBoundingClientRect();
+//   let sliderWrpWidth = sliderWrpClientRect.width;
+//   let x = -sliderWrpWidth + "px";
+
+//   let sliderClientRect = slider.getBoundingClientRect();
+//   let sliderLeft = sliderClientRect.x;
+//   console.log(sliderLeft);
+
+//   if (sliderLeft < 371.6 && sliderLeft > -828.4)  {
+//   slider.style.left = x;
+//   } else  {
+
+//   }
+// }

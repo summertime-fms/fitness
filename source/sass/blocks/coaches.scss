@@ -1,0 +1,22 @@
+.coaches__wrapper {
+  @include container-desktop;
+}
+
+// .coaches__slider-wrapper {
+//   width: 1200px;
+//   min-height: 500px;
+// }
+
+.coaches__slider {
+
+  padding-top: 50px;
+}
+
+.coachers__slide {
+  width: 260px;
+  height: 294px;
+}
+
+.coachers__slide-group {
+  display: flex;
+}

@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/style.min.css">
+  <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
   <title>Проект Fitness</title>
 </head>
 <body>
@@ -199,9 +199,98 @@
       </div>
       </div>
     </section>
+    <section class="coaches">
+    <div class="coaches__wrapper">
+      <h2 class="coaches__title title">Тренеры</h2>
+        <div class="coachers__slider-wrapper swiper-container">
+          <div class="coachers__slider swiper-wrapper">
+
+
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-1.jpg" width="260" height="294" alt="Анна Павлова">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-2.jpg"  width="260" height="294" alt="Алексей Лавров">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-3.jpg"  width="260" height="294" alt="Александр Пашков">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-4.jpg" width="260" height="294" alt="Мария Кетова">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-1.jpg" width="260" height="294" alt="Анна Павлова">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-2.jpg"  width="260" height="294" alt="Алексей Лавров">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-3.jpg"  width="260" height="294" alt="Александр Пашков">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-4.jpg" width="260" height="294" alt="Мария Кетова">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-1.jpg" width="260" height="294" alt="Анна Павлова">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-2.jpg"  width="260" height="294" alt="Алексей Лавров">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-3.jpg"  width="260" height="294" alt="Александр Пашков">
+                </div>
+                <div class="coachers__slide swiper-slide">
+                  <img class="coachers__image" src="img/coach-4.jpg" width="260" height="294" alt="Мария Кетова">
+                </div>
+
+
+
+          </div>
+
+          <div class="swiper-button-prev"></div>
+          <div class="swiper-button-next"></div>
+
+      </div>
+
+      </div>
+      </div>
+    </section>
   </main>
   <footer></footer>
+
+<script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
+  <script>
+    var mySwiper = new Swiper ('.swiper-container', {
+    direction: 'horizontal',
+    loop: true,
+    navigation: {
+      nextEl: '.swiper-button-next',
+      prevEl: '.swiper-button-prev',
+    },
+
+    spaceBetween: 40,
+
+    preloadImages: true,
+    breakpoints: {
+      320: {
+        slidesPerView: 1,
+        spaceBetween: 10,
+        slidesPerGroup: 1
+      },
+      768: {
+        slidesPerView: 2,
+        slidesPerGroup: 2,
+        spaceBetween: 20
+      },
+      1200: {
+        slidesPerGroup: 4,
+        slidesPerView: 4
+      }
+
+    }
+  })
+    </script>
 </body>
 </html>

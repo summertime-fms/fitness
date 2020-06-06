@@ -54,3 +54,4 @@ tabs.onclick = function(evt) {
     itemGroups[2].style.display ="flex";
   }
 }
+
