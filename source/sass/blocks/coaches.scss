@@ -17,6 +17,11 @@
   height: 294px;
 }
 
-.coachers__slide-group {
+.coaches__slide-group {
   display: flex;
+}
+
+.coaches__slider__inner {
+  position: relative;
+  width: 100%;
 }
