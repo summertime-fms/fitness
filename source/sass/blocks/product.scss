@@ -1,7 +1,6 @@
 .product {
   width: 360px;
   padding: 61px 75px;
-  margin-right: 43px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -70,7 +69,8 @@
   color: #102654;
   border-color: #102654;
   border-width: 2px;
-  width: 206px;
+  min-width: unset;
+  width: 88%;
 }
 
 .product__button:hover {
