@@ -182,31 +182,6 @@
   pointer-events: none;
 }
 
-.swiper-button-prev::after,
-.swiper-button-next::after {
-  content: "";
-  width: 38px;
-  height: 25px;
-  transform: rotate(-135deg);
-  border-top: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
-}
-
-.swiper-button-next,
-.swiper-container-rtl .swiper-button-prev {
-  right: -40px;
-  left: auto;
-}
-
-.swiper-button-prev,
-.swiper-container-rtl .swiper-button-next {
-  left: -40px;
-  right: auto;
-}
-
-.swiper-button-next::after {
-  transform: rotate(45deg);
-}
 
 .swiper-button-lock {
   display: none;
