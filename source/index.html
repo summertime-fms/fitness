@@ -8,6 +8,9 @@
   <title>Проект Fitness</title>
 </head>
 <body>
+  <div style="display: none;">
+    <include src="build/img/sprite_auto.svg" style="display: none;"></include>
+    </div>
   <header class="page-header">
     <div class="page-header__wrapper">
       <a class="page-header__logo" href="#" title="Supergym">
@@ -388,21 +391,26 @@
     <section class="offers"><div class="offers__wrapper">
       <h2 class="offers__title title ">Акции</h2>
       <div class="offers__inner">
-        <div class="offers__unlimeted">
+        <div class="offers__unlimited">
           <div class="offers__unlimited-text">
             <span class="offers__unlimited__time">Год</span>
             <b class="offers__unlimited-price">4999</b>
             <p class="offers__unlimited-description">Безлимитный абонемент в тренажерный зал</p>
-            <a class="offers__unlimited__link" href="#">Подробнее</a>
+            <a class="offers__link offers__link--white" href="#">Подробнее</a>
           </div>
-          <div class="offers__unlimeted-image"></div>
+          <div class="offers__unlimited-image"></div>
         </div>
-        <div class="offers__items">
-          <div class="offers__items-item">
+        <div class="offers__items-group">
+          <div class="offers__item">
             <h3 class="offers__name">Месяц бесплатно</h3>
-
+            <p class="offers__description">Приведи друга, получи абонемент в подарок</p>
+            <a class="offers__link offers__link--blue" href="#">Подробнее</a>
           </div>
-          <div class="offers__items-item"></div>
+          <div class="offers__item">
+            <h3 class="offers__name">Скидка 20%</h3>
+            <p class="offers__description">Корпоративный фитнес с командой</p>
+            <a class="offers__link offers__link--blue" href="#">Подробнее</a>
+          </div>
         </div>
       </div>
       </div>
