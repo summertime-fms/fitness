@@ -4,7 +4,7 @@
   "description": "Проект в Акселераторе от htmlAcademy",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
-    "autoprefixer": "9.5.x",
+    "autoprefixer": "^9.8.0",
     "browser-sync": "2.26.x",
     "eslint": "4.16.0",
     "eslint-config-htmlacademy": "0.4.x",
@@ -37,6 +37,9 @@
     "last 2 versions",
     "IE 11",
     "Firefox ESR"
+  ],
+  "grid": [
+    "true"
   ],
   "editorconfig-cli": [
     "*.json",

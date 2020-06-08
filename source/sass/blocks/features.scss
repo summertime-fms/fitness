@@ -1,3 +1,5 @@
+/* autoprefixer grid: on */
+
 .features {
   padding-top: 60px;
   background-color: #f8f9fc;
@@ -18,14 +20,15 @@
 }
 
 .features__container {
+  position: relative;
   display: grid;
+
   grid-template-columns: auto 341px auto;
   grid-template-rows: 236px 84px;
 
 
   @include list-default;
 }
-
 
 
 .features__item-inner {
@@ -37,15 +40,15 @@
   flex-direction: column;
 }
 
-// .features__container::after {
-//   content: "";
-//   display: block;
-//   width: 100%;
-//   height: 2px;
-//   position: absolute;
-//   top: 50%;
-//   background-color: rgba(209, 10, 66, 0.2);
-// }
+.features__container::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  position: absolute;
+  top: 50%;
+  background-color: rgba(209, 10, 66, 0.2);
+}
 
 .features__item {
 
@@ -57,6 +60,26 @@
   padding-left: 18px;
 }
 
+.features__item--square {
+  grid-row: 1;
+  grid-column: 1;
+}
+
+.features__item--parking {
+  grid-column: 3;
+  grid-row: 1;
+}
+
+.features__item--places {
+  grid-row: 2;
+  grid-column: 1;
+}
+
+.features__item--expirience {
+  grid-column: 3;
+  grid-row: 2;
+}
+
 .features__item--center {
   grid-row-start: 1;
   grid-row-end: 3;
@@ -66,16 +89,11 @@
   justify-content: center;
   padding-top: 9px;
   padding-left: 0;
+  position: relative;
+  z-index: 3;
+  background-color: #f8f9fc;
 }
 
-// .features__group-wrapper {
-//   position: relative;
-//   z-index: 3;
-//   align-self: center;
-//   padding-left: 30px;
-//   padding-right: 30px;
-//   background-color: #ffffff;
-// }
 
 .features__quantity {
   font-size: 71px;
@@ -111,7 +129,7 @@
   padding-bottom: 6px;
 }
 
-.features__title--center {
+.features__title-center {
   margin: 0;
   font-size: 74px;
   padding-bottom: 4px;
@@ -129,4 +147,78 @@
 
 .features__item--center .features__description {
   margin: 0;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .features__wrapper {
+    @include container-tablet;
+    padding-top: 39px;
+  }
+
+  .features__title {
+    padding-bottom: 42px;
+  }
+
+  .features__item {
+    padding-left: 0;
+  }
+
+  .features__container {
+    grid-template-columns: 52% auto;
+    grid-template-rows: auto 321px auto;
+  }
+
+  .features__item--center {
+    grid-row: 2;
+    grid-column-start: 1;
+    grid-column-end: 3;
+
+    padding: 40px 118px;
+  }
+
+  .features__item-inner {
+    width: 100%;
+    padding-top: 36px;
+  }
+
+  .features__item--square {
+    grid-column: 1;
+    grid-row: 1;
+  }
+
+  .features__item--parking {
+    grid-row: 1;
+    grid-column: 2;
+  }
+
+  .features__item--places {
+    grid-row: 3;
+    grid-column: 1;
+  }
+
+  .features__item--expirience {
+    grid-row: 3;
+    grid-column: 2;
+  }
+
+  .features__quantity {
+    font-size: 58px;
+  }
+
+  .features__name {
+    font-size: 20px;
+    padding-bottom: 2px;
+  }
+
+  .features__item--center small {
+    font-size: 22px;
+  }
+
+  .features__item--center .features__number {
+    padding-bottom: 9px;
+  }
+
+  .features__title-center {
+    padding-bottom: 0;
+  }
 }

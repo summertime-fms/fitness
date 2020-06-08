@@ -107,6 +107,16 @@
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .coaches {
+    padding-top: 39px;
+    padding-bottom: 125px;
+  }
+
+  .coaches__title {
+    align-self: center;
+    padding-bottom: 40px;
+  }
+
   .coaches__wrapper {
     @include container-tablet;
     min-width: 576px;
