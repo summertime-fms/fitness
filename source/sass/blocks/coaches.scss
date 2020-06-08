@@ -136,6 +136,16 @@
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .coaches {
+    padding-top: 10px;
+    padding-bottom: 66px;
+  }
+
+  .coaches__title {
+    padding-bottom: 43px;
+    align-self: center;
+  }
+
   .coaches__wrapper {
     @include container-mobile;
     min-width: 290px;
