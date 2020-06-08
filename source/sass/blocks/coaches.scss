@@ -4,6 +4,9 @@
 
 .coaches__wrapper {
   @include container-desktop;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 // .coaches__slider-wrapper {
@@ -13,6 +16,7 @@
 
 .coaches__title {
   padding-bottom: 62px;
+  align-items: flex-start;
 }
 
 .coaches__slide {
@@ -23,7 +27,7 @@
 
 .coaches__slider__inner {
   position: relative;
-  width: 100%;
+  width: 90%;
 }
 
 .coaches__slide-button--prev::after,
@@ -54,6 +58,51 @@
 
 .coaches__slide-button--next::after {
   transform: rotate(45deg);
+}
+
+.coaches__info {
+  position: absolute;
+  top: 0;
+  flex-direction: column;
+  align-items: center;
+  padding: 58px 0;
+  color: #ffffff;
+  font-family: $content-font;
+  font-size: 16px;
+
+  width: 100%;
+  height: 100%;
+
+  background-color: rgba(16, 38, 84, 0.89);
+  overflow-y: auto;
+  display: none;
+}
+
+.coaches__slide:hover .coaches__info {
+  display: flex;
+  cursor: pointer;
+}
+
+.coaches b {
+  font-size: 18px;
+  text-align: center;
+  line-height: 1.5;
+}
+
+.coaches__kind-of-sport {
+  display: block;
+  color: #b6bdcc;
+  line-height: 1.5;
+}
+
+.coaches__feature:not(:last-of-type) {
+  padding-bottom: 24px;
+}
+
+@media (min-width: 1366px) {
+  .coaches__slider__inner {
+    width: 100%;
+  }
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
