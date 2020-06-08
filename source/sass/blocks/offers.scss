@@ -14,8 +14,7 @@
 
 .offers__inner {
   padding-top: 62px;
-  // padding-right: 20px;
-  // padding-left: 20px;
+
   display: flex;
   font-family: $content-font;
 }
@@ -40,6 +39,11 @@
   background-repeat: no-repeat;
   width: 50%;
   background-color: #62a9e2;
+  background-size: 100%;
+
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/offer_photo-desktop@2x.jpg");
+  }
 }
 
 .offers__unlimited__time {
@@ -107,4 +111,51 @@
 
 .offers__item a {
   color: #1c3374;
+}
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .offers__wrapper {
+    @include container-tablet;
+  }
+
+  .offers__inner {
+    flex-direction: column;
+  }
+
+  .offers__unlimited-image {
+    width: 59%;
+    background-image: url("../img/offer_photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/offer_photo-tablet@2x.jpg");
+    }
+  }
+
+  .offers__unlimited-text {
+    width: 41%;
+  }
+
+  .offers__unlimited {
+    margin: 0;
+    margin-bottom: 30px;
+  }
+
+  .offers__unlimited-description {
+    padding-bottom: 176px;
+  }
+
+  .offers__items-group {
+    flex-direction: row;
+  }
+
+  .offers__item {
+    flex-basis: 0;
+    flex-grow: 1;
+    padding: 35px 45px;
+    min-height: 217px;
+  }
+
+  .offers__item.offers__item:not(:last-of-type) {
+    margin-right: 30px;
+  }
 }
