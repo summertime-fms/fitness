@@ -147,6 +147,8 @@
 
   .offers__items-group {
     flex-direction: row;
+    flex-wrap: wrap;
+    margin-right: -30px;
   }
 
   .offers__item {
@@ -154,9 +156,6 @@
     flex-grow: 1;
     padding: 35px 45px;
     min-height: 217px;
-  }
-
-  .offers__item.offers__item:not(:last-of-type) {
     margin-right: 30px;
   }
 }
