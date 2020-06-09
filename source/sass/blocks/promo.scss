@@ -10,19 +10,25 @@
 .promo__inner {
   display: flex;
   width: 100%;
-  background-image: url("../img/supergames-photo@1x.jpg"), linear-gradient(to right, #ed0233  44.6%, #000145 44.6%);
+}
+
+.promo__image {
+  width: 55.4%;
+  background-image: url("../img/supergames-photo@1x.jpg");
   background-repeat: no-repeat;
-  background-position: right;
+  background-position: center;
+  background-color: #000145;
+  background-size: cover;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-    background-size: 57%, 100%;
-    background-position: right, left;
-    background-image: url("../img/supergames-photo@2x.jpg"), linear-gradient(to right, #ed0233  44.6%, #000145 44.6%);
+
+    background-image: url("../img/supergames-photo@2x.jpg");
   }
 }
 
 .promo__content {
   padding: 78px 58px;
+  background-color: #ed0233;
   width: 44.6%;
 }
 
@@ -115,10 +121,6 @@
 
   .promo__inner {
     width: 100%;
-
-    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-size: 55%, 100%;
-    }
   }
 
   .promo__note {
@@ -164,13 +166,18 @@
 
   .promo__inner {
     width: 100%;
+    flex-direction: column;
     min-height: 584px;
-    background-image: url("../img/supergames-photo@1x.jpg");
-    background-size: auto 50%, 100%;
+  }
+
+  .promo__image {
+    background-image: url("../img/supergames-photo-mobile@1x.jpg");
+    height: 50%;
+    width: 100%;
+    flex-grow: 1;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background-image: url("../img/supergames-photo@2x.jpg"), linear-gradient(to bottom, #ed0233 50%, #000145 50%);
-      background-position: bottom, top;
+      background-image: url("../img/supergames-photo@2x.jpg");
     }
   }
 

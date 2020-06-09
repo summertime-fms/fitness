@@ -10,11 +10,6 @@
   align-items: center;
 }
 
-// .coaches__slider-wrapper {
-//   width: 1200px;
-//   min-height: 500px;
-// }
-
 .coaches__title {
   padding-bottom: 62px;
   align-self: flex-start;
@@ -84,6 +79,10 @@
   cursor: pointer;
 }
 
+.coaches__slide:hover {
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+}
+
 .coaches b {
   font-size: 18px;
   text-align: center;
@@ -123,7 +122,7 @@
   }
 
   .coaches__slider__inner {
-    padding: 0 51px;
+    padding: 0 37px;
   }
 
   .coaches__slide-button--next {
@@ -138,11 +137,11 @@
 @media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
   .coaches {
     padding-top: 10px;
-    padding-bottom: 90px;
+    padding-bottom: 66px;
   }
 
   .coaches__title {
-    padding-bottom: 52px;
+    padding-bottom: 43px;
     align-self: center;
   }
 
@@ -157,7 +156,7 @@
   }
 
   .coaches__slider__inner {
-    padding: 0 32px;
+    padding: 0 22px;
   }
 
   .coaches__slide-button--next {
