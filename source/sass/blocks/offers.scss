@@ -27,6 +27,8 @@
 }
 
 .offers__unlimited-text {
+  display: flex;
+  flex-direction: column;
   padding: 40px 45px;
   background-color: #ed0233;
   color: #ffffff;
@@ -39,7 +41,8 @@
   background-repeat: no-repeat;
   width: 50%;
   background-color: #62a9e2;
-  background-size: 100%;
+  background-size: cover;
+  background-position: center;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/offer_photo-desktop@2x.jpg");
@@ -66,6 +69,7 @@
 }
 
 .offers__link {
+  margin-top: auto;
   text-decoration: underline;
   text-transform: uppercase;
   font-weight: 700;
