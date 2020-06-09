@@ -1,0 +1,21 @@
+.pre-footer-wrapper {
+  background: linear-gradient(to right, #102654 50%, #ffffff 50%);
+}
+
+.pre-footer-wrapper::before {
+  content: "";
+  position: absolute;
+  width: 50%;
+  height: 1px;
+  right: 0;
+  display: block;
+  background-color: #74819c;
+}
+
+.pre-footer-wrapper__form {
+  width: 50%;
+}
+
+.pre-footer-wrapper__contacts {
+  width: 50%;
+}

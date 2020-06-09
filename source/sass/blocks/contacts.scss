@@ -1,0 +1,30 @@
+.contacts__wrapper {
+  padding-left: 120px;
+}
+
+.contacts {
+  @include container-desktop;
+}
+
+.contacts__title {
+  margin-bottom: 57px;
+  padding-top: 70px;
+}
+
+.contacts__inner {
+  display: flex;
+  font-family: $content-font;
+  font-size: 14px;
+  color: #102654;
+  line-height: 21px;
+}
+
+.contacts__group:first-of-type {
+  border-right: 1px solid #b8b8b8;
+  margin-right: 60px;
+}
+
+.contacts__group {
+  flex-basis: 0;
+  flex-grow: 1;
+}

@@ -1,0 +1,45 @@
+.form {
+  width: 50%;
+
+  @include container-desktop;
+}
+
+.form__title {
+  margin-bottom: 48px;
+  color: #ffffff;
+  padding-top: 70px;
+}
+
+.form__field {
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-left: 5px;
+  font-family: $content-font;
+  font-size: 14px;
+  min-width: 190px;
+  line-height: 16px;
+  color: #ffffff;
+  border: none;
+  background-color: transparent;
+  min-height: 30px;
+  border-bottom: 1px solid #74819c;
+}
+
+input::placeholder {
+  color: #ffffff;
+}
+
+.form__field:focus::placeholder {
+  color: transparent;
+  padding-left: 15px;
+}
+
+.form__field:focus {
+  outline: none;
+  border-top: 1px solid #f2f2f2;
+}
+
+.form__button {
+  margin-top: 30px;
+  width: 70.8%;
+}
