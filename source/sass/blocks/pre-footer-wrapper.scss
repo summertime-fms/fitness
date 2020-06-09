@@ -19,3 +19,24 @@
 .pre-footer-wrapper__contacts {
   width: 50%;
 }
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .pre-footer-wrapper {
+    background: none;
+  }
+
+  .pre-footer-wrapper::before {
+    display: none;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .pre-footer-wrapper {
+    background: none;
+  }
+
+  .pre-footer-wrapper::before {
+    display: none;
+  }
+}
+

@@ -11,6 +11,7 @@
 }
 
 .form__field {
+  margin: 0 15px;
   padding-top: 10px;
   padding-bottom: 10px;
   padding-left: 5px;
@@ -41,5 +42,66 @@ input::placeholder {
 
 .form__button {
   margin-top: 30px;
+  overflow-wrap: anywhere;
+
+
   width: 70.8%;
+}
+
+.form__fields {
+  margin-left: -15px;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .form {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    background-color: #102654;
+  }
+
+  .form__wrapper {
+    @include container-tablet;
+    padding: 0 133px;
+  }
+
+  .form__button {
+    width: 95%;
+    margin-bottom: 34px;
+  }
+
+  .form__fields {
+    display: flex;
+    margin-left: -30px;
+  }
+
+  .form__field {
+    min-width: 205px;
+    margin: 0 30px;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .form {
+    width: 100%;
+    background-color: #102654;
+    padding: 0;
+    margin: 0;
+    padding-bottom: 60px;
+  }
+
+  .form__wrapper {
+    @include container-mobile;
+  }
+
+  .form__field {
+    width: 100%;
+  }
+
+  .form__button {
+    width: 100%;
+  }
 }

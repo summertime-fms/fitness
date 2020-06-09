@@ -3,3 +3,17 @@
   display: flex;
   padding-bottom: 40px;
 }
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .container {
+    padding: 0;
+    flex-direction: column;
+  }
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .container {
+    flex-direction: column;
+    padding: 0;
+  }
+}
