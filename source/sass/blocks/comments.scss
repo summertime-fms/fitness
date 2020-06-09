@@ -91,3 +91,13 @@
 .comments__button--next::after {
   transform: rotate(45deg);
 }
+
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .comments__wrapper {
+    @include container-tablet;
+  }
+
+  .comments__slider-wrapper {
+    width: 83.3%;
+  }
+}
