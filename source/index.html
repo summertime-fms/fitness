@@ -5,8 +5,6 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.min.css">
-
-
   <title>Проект Fitness</title>
 </head>
 <body>
@@ -15,8 +13,8 @@
     </div>
   <header class="page-header">
     <div class="page-header__wrapper">
-      <a class="page-header__logo" href="#" title="Supergym">
-        <img class="page-header__logo-image" src="img/logo.svg" alt="Фитнесс-центр Supergym" width="89" height="20">
+      <a class="page-header__logo" href="#" title="Supergym" aria-label="Supergym logo"">
+        <img class="page-header__logo-image" src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
       </a>
       <a class="page-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
     </div>
@@ -495,9 +493,56 @@
     </div>
     </div>
   </main>
-  <footer></footer>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-=
+  <footer class="page-footer">
+    <div class="page-footer__wrapper">
+      <a class="page-footer__logo-wrapper" href="#" title="Supergym" aria-label="Supergym logo">
+        <img class="page-footer__logo-image" src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
+      </a>
+      <nav class="page-footer__nav">
+        <ul class="page-footer__nav-list">
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Услуги</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Абонементы</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Акции</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Тренеры</a>
+          </li>
+          <li class="page-footer__nav-item">
+            <a class="page-footer__nav-link" href="#">Расписание</a>
+          </li>
+        </ul>
+      </nav>
+      <ul class="page-footer__socials socials">
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Vk" title="Vk">
+            <svg class="socials__icon" width="24" height="13">
+              <use xlink:href="#icon-vk"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Instagram" title="Instagram">
+            <svg class="socials__icon" width="24" height="24">
+              <use xlink:href="#icon-inst"></use>
+            </svg>
+          </a>
+        </li>
+        <li class="socials__item">
+          <a class="socials__link" href="#" aria-label="Facebook" title="Facebook">
+            <svg class="socials__icon" width="12" height="24">
+              <use xlink:href="#icon-fb"></use>
+            </svg>
+          </a>
+        </li>
+      </ul>
+    </div>
+  </footer>
+
 
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="js/jquery.js"></script>
