@@ -1,0 +1,35 @@
+.slider-buttons {
+  width: 23px;
+  height: 23px;
+  cursor: pointer;
+  transform: rotate(-45deg);
+  background-color: transparent;
+  position: absolute;
+  top: calc(50% - 11.5px);
+
+  border-top: 1px solid #afafaf;
+  border-left: 1px solid #afafaf;
+}
+
+.slider-buttons--prev {
+  left: -40px;
+}
+
+.slider-buttons--next {
+  right: -40px;
+  transform: rotate(-225deg);
+}
+
+.slider-buttons:hover {
+  border-color: #616161;
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .slider-buttons--prev {
+    left: -10px;
+  }
+
+  .slider-buttons--next {
+    right: -10px;
+  }
+}

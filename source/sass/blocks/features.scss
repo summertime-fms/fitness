@@ -102,10 +102,16 @@
   font-size: 71px;
   line-height: 1;
   font-weight: 700;
-  background: linear-gradient(-225deg, #b80027, #003d85);
-  background-clip: text;
-  -webkit-text-fill-color: transparent;
 }
+
+@supports (-webkit-text-fill-color: transparent) {
+  .features__quantity {
+    background: linear-gradient(-225deg, #b80027, #003d85);
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+  }
+}
+
 
 .features__description {
   margin: 0;
@@ -225,6 +231,10 @@
   .features__title-center {
     padding-bottom: 0;
   }
+
+  .features__container::after {
+    display: none;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
@@ -239,6 +249,10 @@
   .features__wrapper {
     @include container-mobile;
     padding: 0;
+  }
+
+  .features__container::after {
+    display: none;
   }
 
   .features__item-wrapper {

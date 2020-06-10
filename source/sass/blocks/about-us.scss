@@ -164,6 +164,7 @@
     background-position: center;
     width: 100%;
     background-repeat: no-repeat;
+    z-index: 3;
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {

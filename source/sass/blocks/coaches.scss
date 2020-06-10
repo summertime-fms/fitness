@@ -17,7 +17,7 @@
 
 .coaches__slide {
   width: 260px;
-  height: 294px;
+  height: auto;
 }
 
 
@@ -29,8 +29,8 @@
 .coaches__slide-button--prev::after,
 .coaches__slide-button--next::after {
   content: "";
-  width: 38px;
-  height: 25px;
+  width: 23.5px;
+  height: 23.5px;
   transform: rotate(-135deg);
   border-top: 1px solid #afafaf;
   border-right: 1px solid #afafaf;
@@ -43,6 +43,7 @@
 }
 
 .coaches__slide-button--next {
+
   right: -40px;
   left: auto;
 }
@@ -58,24 +59,25 @@
 
 .coaches__info {
   position: absolute;
+  box-sizing: border-box;
   top: 0;
   flex-direction: column;
   align-items: center;
-  padding: 58px 0;
+  padding: 0;
+  padding-top: 53px;
   color: #ffffff;
   font-family: $content-font;
   font-size: 16px;
-
+  overflow-y: auto;
   width: 100%;
   height: 100%;
 
   background-color: rgba(16, 38, 84, 0.89);
-  overflow-y: auto;
   display: none;
 }
 
 .coaches__slide:hover .coaches__info {
-  display: flex;
+  display: block;
   cursor: pointer;
 }
 
@@ -84,6 +86,7 @@
 }
 
 .coaches b {
+  display: block;
   font-size: 18px;
   text-align: center;
   line-height: 1.5;
@@ -91,6 +94,7 @@
 
 .coaches__kind-of-sport {
   display: block;
+  text-align: center;
   color: #b6bdcc;
   line-height: 1.5;
 }
@@ -165,5 +169,12 @@
 
   .coaches__slide-button--prev {
     left: 0;
+  }
+
+  .coaches__slide-button--prev::after,
+  .coaches__slide-button--next::after {
+
+    width: 13.7px;
+    height: 13.7px;
   }
 }

@@ -88,6 +88,8 @@
   border-image: linear-gradient(-225deg, #b80027, #003d85) 30;
   display: flex;
   flex-direction: column;
+  flex-basis: 0;
+  flex-grow: 1;
 }
 
 .offers__items-group {

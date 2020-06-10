@@ -6,6 +6,7 @@
   <link rel="stylesheet" href="css/swiper.css">
   <link rel="stylesheet" href="css/style.min.css">
 
+
   <title>Проект Fitness</title>
 </head>
 <body>
@@ -318,8 +319,8 @@
                     </picture>
                 </div>
           </div>
-          <div class="coaches__slide-button coaches__slide-button--prev swiper-button-prev"></div>
-          <div class="coaches__slide-button coaches__slide-button--next swiper-button-next"></div>
+          <div class="slider-buttons slider-buttons--prev coaches__button-prev"></div>
+          <div class="slider-buttons slider-buttons--next coaches__button-next"></div>
       </div>
       </div>
       </div>
@@ -384,8 +385,11 @@
             <h3 class="features__name">Тренерский опыт</h3>
             <p class="features__description">Добивайтесь своих целей быстрее<br> с профессиональным тренером </p>
           </div>
-          </li>
+
         </li>
+
+
+
       </div>
     </section>
     <section class="offers"><div class="offers__wrapper">
@@ -422,19 +426,7 @@
         <div class="comments__slider-wrapper">
         <div class="comments__slider swiper-container">
         <div class="comments__slider-inner swiper-wrapper">
-          <article class="comments__slide swiper-slide">
-            <div class="comments__image">
-              <source type="image/webp" srcset="img/author-photo@1x.webp 1x, img/author-photo@2x.webp 2x">
-              <img src="img/author-photo@1x.png" srcset="img/author-photo@2x.png 2x" width="80" height="80" alt="Анна Орлова">
-            </div>
-            <blockquote>
-            <b class="comments__author">Анна Орлова</b>
-            <p class="comments__text">«Хожу в SuperClub уже больше года. Нравится,
-              что в клубе всегда чисто, тренажеры обновляют,
-              персонал дружелюбный. Зал просторный, даже
-              в вечернее время нет очередей»</p>
-              </blockquote>
-          </article>
+
           <article class="comments__slide swiper-slide">
             <div class="comments__image">
               <source type="image/webp" srcset="img/author-photo@1x.webp 1x, img/author-photo@2x.webp 2x">
@@ -449,8 +441,8 @@
               </blockquote>
           </article>
         </div>
-        <div class="comments__button-prev swiper-button-next"></div>
-        <div class="comments__button-next swiper-button-next"></div>
+        <div class="slider-buttons slider-buttons--prev comments__button-prev"></div>
+        <div class="slider-buttons slider-buttons--next comments__button-next"></div>
         </div>
         </div>
       </div>
@@ -464,9 +456,10 @@
               <div class="form__fields">
               <input class="form__field form__field--name" type="text" name="user-name" placeholder="Имя">
               <input class="form__field form__field--phone" type="tel" name="phone-number" minlength="17" maxlength="17" value=""  placeholder="Телефон">
-
               </div>
+              <div class="form__button-wrapper">
               <button class="form__button button" type="submit">Отправить</button>
+              </div>
             </form>
           </div>
         </section>
@@ -498,66 +491,21 @@
             </div>
           </div>
         </section>
-
       </div>
     </div>
     </div>
   </main>
   <footer></footer>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+=
 
 <script src="https://unpkg.com/swiper/js/swiper.js"></script>
   <script src="js/jquery.js"></script>
   <script src="js/script.js"></script>
+
   <script>
-    var mySwiper = new Swiper ('.coaches__slider-wrapper', {
-    direction: 'horizontal',
-    loop: true,
-    navigation: {
-      nextEl: '.coaches__slide-button--next',
-      prevEl: '.coaches__slide-button--prev',
-    },
-
-    spaceBetween: 40,
-
-
-    breakpoints: {
-      320: {
-        slidesPerView: 1,
-        spaceBetween: 10,
-        slidesPerGroup: 1,
-        width:226
-      },
-      768: {
-         slidesPerView: 2,
-        slidesPerGroup: 2,
-        spaceBetween: 30,
-        width: 536
-
-      },
-      1200: {
-        slidesPerGroup: 4,
-        slidesPerView: 4,
-        spaceBetween: 40,
-        width: 1040
-
-      }
-
-
-    }
-  })
-  var mySwiper1 = new Swiper('.comments__slider', {
-    direction: 'horizontal',
-    loop: true,
-    navigation: {
-      nextEl: '.comments__button-next',
-      prevEl: '.comments__button-prev',
-    },
-    slidesPerView: 1,
-    slidesPerGroup: 1,
-
-    spaceBetween: 0,
-
-  });
     </script>
+
+
 </body>
 </html>
