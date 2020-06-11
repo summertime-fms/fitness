@@ -1,6 +1,6 @@
 .coaches {
-  padding-bottom: 106px;
-  padding-top: 68px;
+  padding-bottom: 119px;
+  padding-top: 58px;
 }
 
 .coaches__wrapper {
@@ -11,11 +11,12 @@
 }
 
 .coaches__title {
-  padding-bottom: 62px;
+  padding-bottom: 53px;
   align-self: flex-start;
 }
 
 .coaches__slide {
+  position: relative;
   width: 260px;
   height: auto;
 }
@@ -26,35 +27,12 @@
   width: 90%;
 }
 
-.coaches__slide-button--prev::after,
-.coaches__slide-button--next::after {
-  content: "";
-  width: 23.5px;
-  height: 23.5px;
-  transform: rotate(-135deg);
-  border-top: 1px solid #afafaf;
-  border-right: 1px solid #afafaf;
+.coaches__button-next {
+  right: -52px;
 }
 
-.coaches__slide-button--prev:hover::after,
-.coaches__slide-button--next:hover::after {
-  border-top-color: #606060;
-  border-right-color: #606060;
-}
-
-.coaches__slide-button--next {
-
-  right: -40px;
-  left: auto;
-}
-
-.coaches__slide-button--prev {
-  left: -40px;
-  right: auto;
-}
-
-.coaches__slide-button--next::after {
-  transform: rotate(45deg);
+.coaches__button-prev {
+  left: -52px;
 }
 
 .coaches__info {
@@ -76,9 +54,26 @@
   display: none;
 }
 
+.coaches__slide-name {
+  font-family: $content-font;
+  color: #ffffff;
+  font-size: 18px;
+  line-height: 1.5;
+  position: absolute;
+  text-align: center;
+  width: 100%;
+  justify-content: center;
+  display: flex;
+  bottom: 24px;
+}
+
 .coaches__slide:hover .coaches__info {
   display: block;
   cursor: pointer;
+}
+
+.coaches__slide:hover .coaches__slide-name {
+  display: none;
 }
 
 .coaches__image:hover {
@@ -100,7 +95,14 @@
 }
 
 .coaches__feature:not(:last-of-type) {
-  padding-bottom: 24px;
+  padding-bottom: 18px;
+}
+
+.coaches__features {
+  margin: 0;
+  padding-top: 29px;
+  padding-left: 71px;
+  font-size: 14px;
 }
 
 @media (min-width: 1366px) {
@@ -111,8 +113,8 @@
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .coaches {
-    padding-top: 39px;
-    padding-bottom: 125px;
+    padding-top: 41px;
+    padding-bottom: 102px;
   }
 
   .coaches__title {
@@ -123,10 +125,13 @@
   .coaches__wrapper {
     @include container-tablet;
     min-width: 576px;
+    padding-left: 101px;
+    padding-right: 101px;
   }
 
   .coaches__slider__inner {
-    padding: 0 37px;
+    height: 294px;
+    width: 100%;
   }
 
   .coaches__slide-button--next {
@@ -136,11 +141,15 @@
   .coaches__slide-button--prev {
     left: 0;
   }
+
+  .coaches__slider-wrapper {
+    height: 100%;
+  }
 }
 
 @media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
   .coaches {
-    padding-top: 10px;
+    padding-top: 7px;
     padding-bottom: 66px;
   }
 
@@ -163,18 +172,19 @@
     padding: 0 22px;
   }
 
-  .coaches__slide-button--next {
-    right: 0;
+  .coaches__button-next {
+    right: -14px;
   }
 
-  .coaches__slide-button--prev {
-    left: 0;
+  .coaches__button-prev {
+    left: -14px;
   }
 
-  .coaches__slide-button--prev::after,
-  .coaches__slide-button--next::after {
+  .coaches__info {
+    padding-top: 43px;
+  }
 
-    width: 13.7px;
-    height: 13.7px;
+  .coaches__features {
+    padding-left: 30px;
   }
 }

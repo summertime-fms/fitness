@@ -113,7 +113,8 @@
 
 .intro__button {
   margin-left: auto;
-  margin-top: -15px;
+  margin-top: -10px;
+  width: 58%;
 }
 
 .intro__button:focus {
@@ -195,7 +196,7 @@
 
   .intro__button {
     width: 100%;
-    margin-top: -27px;
+    margin-top: -19px;
   }
 
   .intro__text-content {
@@ -204,8 +205,9 @@
   }
 
   .intro__services-list {
-    bottom: 78px;
-    right: 180px;
+    bottom: 74px;
+    font-size: 13px;
+    right: 178px;
   }
 
   .intro::before {

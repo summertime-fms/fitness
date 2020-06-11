@@ -132,17 +132,17 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
       width:226
     },
     768: {
-       slidesPerView: 2,
+      slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30,
-      width: 536
+      width: 566
 
     },
     1200: {
       slidesPerGroup: 4,
       slidesPerView: 4,
       spaceBetween: 40,
-      width: 1160
+      width: 1040
 
     }
 

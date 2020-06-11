@@ -20,5 +20,6 @@
 @media (min-width: $mobile-width) and (max-width: $tablet-width) {
   .button {
     max-width: unset;
+    min-width: 186px;
   }
 }

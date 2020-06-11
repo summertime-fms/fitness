@@ -1,5 +1,5 @@
 .promo {
-  padding-top: 125px;
+  padding-top: 119px;
   padding-bottom: 60px;
 }
 
@@ -13,7 +13,7 @@
 }
 
 .promo__image {
-  width: 55.4%;
+  width: 56.9%;
   background-image: url("../img/supergames-photo@1x.jpg");
   background-repeat: no-repeat;
   background-position: center;
@@ -27,9 +27,10 @@
 }
 
 .promo__content {
-  padding: 78px 58px;
+  padding: 78px 78px;
   background-color: #ed0233;
-  width: 44.6%;
+  width: 43.1%;
+  padding-bottom: 88px;
 }
 
 .promo__title {
@@ -62,7 +63,7 @@
   line-height: 1.5;
   font-family: $content-font;
   color: #ffffff;
-  padding-bottom: 42px;
+  padding-bottom: 51px;
   margin: 0;
 }
 
@@ -98,18 +99,23 @@
 
 .promo__date--day b {
   font-size: 40px;
-  padding-right: 10px;
+  padding-right: 7px;
 }
 
 .promo__date-label {
   display: block;
   padding-top: 5px;
+  padding-bottom: 6px;
 }
 
 .promo__date--time time {
   font-size: 40px;
-  line-height: 1.5;
+  line-height: 1.2;
   font-weight: 700;
+}
+
+.promo-date--day span {
+  font-size: 15px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
@@ -119,8 +125,14 @@
     max-width: unset;
   }
 
+  .promo {
+    padding-top: 33px;
+  }
+
   .promo__title {
     font-size: 52px;
+    padding-right: 30px;
+    padding-bottom: 0;
   }
 
   .promo__inner {
@@ -129,7 +141,7 @@
 
   .promo__note {
     font-size: 12px;
-    padding-bottom: 19px;
+    padding-bottom: 29px;
   }
 
   .promo__content {
@@ -138,6 +150,8 @@
 
   .promo__date-label {
     font-size: 12px;
+    padding-top: 0;
+    padding-bottom: 3px;
   }
 
   .promo__date--day span {
@@ -154,6 +168,9 @@
 
   .promo__button {
     min-width: 202px;
+    border-width: 2px;
+    font-weight: 400;
+    font-size: 10px;
     padding-top: 10px;
     padding-bottom: 10px;
   }
@@ -231,6 +248,7 @@
   .promo__date-label {
     font-size: 12px;
     padding-top: 0;
+    padding-bottom: 0;
   }
 
   .promo__note {

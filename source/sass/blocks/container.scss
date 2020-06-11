@@ -1,7 +1,7 @@
 .container {
   @include container-desktop;
   display: flex;
-  padding-bottom: 40px;
+  padding-bottom: 43px;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {

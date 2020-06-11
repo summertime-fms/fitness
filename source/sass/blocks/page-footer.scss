@@ -93,11 +93,13 @@
 
   .page-footer__logo-wrapper--mobile {
     display: block;
+    width: 68px;
   }
 
   .page-footer__nav-item--logo-mobile {
     display: block;
     margin-top: -3px;
+    padding-top: 4px;
   }
 
   .page-footer__nav-list {
@@ -111,7 +113,7 @@
   }
 
   .page-footer__nav-item {
-    padding: 15px 0;
+    padding: 10px 0;
     margin: 0;
   }
 }

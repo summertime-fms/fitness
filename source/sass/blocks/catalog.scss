@@ -28,7 +28,7 @@
 
   @include container-desktop;
   padding: 0;
-  padding-top: 115px;
+  padding-top: 118px;
   z-index: 3;
 }
 
@@ -61,7 +61,7 @@
 .catalog__tabs {
   @include list-default;
 
-  padding-bottom: 11px;
+  padding-bottom: 12px;
   justify-content: space-between;
   display: flex;
   width: fit-content;
@@ -74,7 +74,7 @@
 }
 
 .catalog__tab:not(:last-of-type) {
-  margin-right: 30px;
+  margin-right: 46px;
 }
 
 .catalog__tab-link:hover {
@@ -115,7 +115,8 @@
 
 .catalog__item--active {
   border: 8px solid transparent;
-  border-image: linear-gradient(-225deg, #b80027, #003d85) 30;
+  border-image: linear-gradient(-225deg, rgb(184, 0, 39), #003d85) 30;
+
   padding: 53px 75px;
 }
 
@@ -132,7 +133,8 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .catalog__items-group {
     flex-direction: column;
-    width: 57.6%;
+    width: 64.6%;
+
     margin-right: 0;
   }
 
@@ -143,6 +145,7 @@
   .catalog::after {
     bottom: -40px;
     width: 345px;
+    height: 425px;
     background-image: url("../img/weights-tablet.png");
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -157,11 +160,11 @@
   }
 
   .catalog__tab:not(:last-of-type) {
-    margin-right: 15px;
+    margin-right: 55px;
   }
 
   .catalog__title {
-    padding-bottom: 28px;
+    padding-bottom: 32px;
   }
 
   .catalog__tab a {
@@ -171,6 +174,10 @@
 
   .catalog__inner {
     @include container-tablet;
+  }
+
+  .catalog__item--active {
+    padding: 53px 108px;
   }
 }
 
@@ -201,11 +208,11 @@
   }
 
   .catalog__item--active {
-    padding: 44px 67px;
+    padding: 44px 33px;
   }
 
   .catalog__wrapper {
-    padding-top: 68px;
+    padding-top: 71px;
   }
 
   .catalog__title {

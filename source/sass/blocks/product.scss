@@ -20,12 +20,13 @@
 }
 
 .product__note {
-  padding-bottom: 64px;
+  padding-bottom: 67px;
   font-size: 16px;
   line-height: 1.5;
   color: #495a7d;
   user-select: none;
   text-align: center;
+  text-transform: lowercase;
 }
 
 .product__price {
@@ -36,6 +37,7 @@
   color: #103aae;
   position: relative;
   z-index: 3;
+  margin-right: 9px;
 }
 
 .product__price-wrapper {
@@ -45,7 +47,7 @@
 
 .product__price-wrapper::before {
   content: attr(data-parent);
-  text-shadow: -23px -37px 0 opacify(#e8e8e8, 0.48);
+  text-shadow: -16px -37px 0 opacify(#e8e8e8, 0.48);
   font-size: 100px;
   color: transparent;
   font-weight: 700;
@@ -73,7 +75,7 @@
   border-color: #102654;
   border-width: 2px;
   min-width: unset;
-  width: 88%;
+  width: 100%;
 }
 
 .product__button:hover {
@@ -90,6 +92,7 @@
   .product {
     width: 100%;
     margin-right: 0;
+    padding: 65px 115px;
     margin-bottom: 40px;
   }
 
@@ -118,7 +121,7 @@
   }
 
   .product__price-wrapper {
-    padding-bottom: 30px;
+    padding-bottom: 33px;
   }
 
   .product__price-wrapper::after {

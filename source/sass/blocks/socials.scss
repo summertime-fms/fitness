@@ -48,6 +48,17 @@
 
 @media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
   .socials {
-    padding-top: 15px;
+    padding-top: 8px;
   }
+
+  .socials__link--vk {
+    width: 33px;
+  }
+
+  .socials__link--inst {
+    width: 26px;
+  }
+  .socials__item:not(:last-of-type) {
+    padding-right: 35px;
+
 }

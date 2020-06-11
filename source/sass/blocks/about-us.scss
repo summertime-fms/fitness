@@ -11,8 +11,11 @@
 .about-us__video-link {
   display: block;
   width: 364px;
+  z-index: 3;
 
-  background-image: url("../img/video.jpg");
+  background-image: url("../img/video@1x.jpg");
+  background-size: 100% auto;
+  background-position: center;
   min-height: 228px;
   margin-top: -116px;
   margin-left: 7%;
@@ -30,19 +33,15 @@
 .about-us__video-overlay {
   position: relative;
   background-color: rgba(20, 54, 122, 0.5);
+  background-image: url("../img/play-button@1x.png");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100px 100px;
   height: 100%;
-}
 
-.about-us__video-overlay::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: calc(50% - 50px);
-  left: calc(50% - 50px);
-  width: 100px;
-  height: 100px;
-  background-image: url("../img/icon-play.svg");
-  background-size: 100%;
+  @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+    background-image: url("../img/play-button@2x.png");
+  }
 }
 
 .about-us__text-content {
@@ -95,11 +94,15 @@
     padding-bottom: 11px;
   }
 
+  .about-us__image-wrapper {
+    width: 100%;
+  }
+
   .about-us__text-content {
     padding: 0;
     padding-top: 47px;
     width: 75%;
-    padding-bottom: 30px;
+    padding-bottom: 34px;
   }
 
   .about-us__note {
@@ -115,25 +118,19 @@
   }
 
   .about-us__video-overlay {
+    background-size: 80px 80px;
     height: 167px;
   }
 
   .about-us__video-link {
     width: 267px;
     min-height: 167px;
-    margin-top: -87px;
+    margin-top: -83px;
     margin-left: 0;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-size: 267px auto;
     }
-  }
-
-  .about-us__video-overlay::before {
-    width: 73px;
-    height: 73px;
-    top: calc(50% - 36px);
-    left: calc(50% - 36px);
   }
 }
 
@@ -162,7 +159,7 @@
     padding-right: 15px;
     padding-top: 47px;
     text-align: left;
-    padding-bottom: 22px;
+    padding-bottom: 25px;
   }
 
   .about-us__video-link {
@@ -175,6 +172,8 @@
     width: 100%;
     background-repeat: no-repeat;
     z-index: 3;
+    min-height: 171px;
+
 
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -186,10 +185,7 @@
     width: 90%;
   }
 
-  .about-us__video-overlay::before {
-    top: calc(50% - 36px);
-    left: calc(50% - 36px);
-    width: 73px;
-    height: 73px;
+  .about-us__video-overlay {
+    background-size: 73px 73px;
   }
 }
