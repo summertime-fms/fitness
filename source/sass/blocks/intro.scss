@@ -106,10 +106,20 @@
   font-family: $content-font;
 }
 
+.intro__socials-link:focus {
+  font-weight: 700;
+  outline: 2px solid #003d85;
+}
+
 .intro__button {
   margin-left: auto;
   margin-top: -15px;
 }
+
+.intro__button:focus {
+  border-color: rgb(181, 33, 33);
+}
+
 
 .intro__button:hover {
   color: rgb(219, 212, 212);

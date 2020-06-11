@@ -11,6 +11,7 @@
   vertical-align: top;
   width: 100%;
   height: auto;
+  fill: #ffffff;
 }
 
 .socials__icon:hover {
@@ -18,7 +19,16 @@
 }
 
 .socials__link {
-  display: block;
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.socials__link:focus .socials__icon {
+  fill: #b80027;
+}
+
+.socials__link:focus {
+  outline: none;
 }
 
 .socials__link--vk {
@@ -34,4 +44,10 @@
 .socials__link--fb {
   width: 12px;
   height: 24px;
+}
+
+@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+  .socials {
+    padding-top: 15px;
+  }
 }

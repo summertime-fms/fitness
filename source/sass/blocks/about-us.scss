@@ -23,6 +23,10 @@
   }
 }
 
+.about-us__video-link:focus {
+  outline: 4px solid rgb(181, 33, 33);
+}
+
 .about-us__video-overlay {
   position: relative;
   background-color: rgba(20, 54, 122, 0.5);
@@ -46,6 +50,12 @@
   padding-right: 85px;
   width: 43%;
   padding-left: 60px;
+}
+
+.about-us__image-wrapper {
+  width: 660px;
+  background-color: #d3d3de;
+  align-self: baseline;
 }
 
 .about-us__title {

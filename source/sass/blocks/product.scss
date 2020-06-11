@@ -79,7 +79,11 @@
 .product__button:hover {
   background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
   color: #ffffff;
-  border: none;
+}
+
+.product__button:focus {
+  background: linear-gradient(111.72deg, #ed0233 17.6%, #003eb7 95.31%);
+  color: #ffffff;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {

@@ -45,6 +45,10 @@ input::placeholder {
   width: 70.8%;
 }
 
+.form__button:focus {
+  outline: 4px solid #cb2222;
+}
+
 .form__fields {
   margin-left: -15px;
   display: flex;

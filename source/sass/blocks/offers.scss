@@ -69,6 +69,7 @@
 }
 
 .offers__link {
+  width: fit-content;
   margin-top: auto;
   text-decoration: underline;
   text-transform: uppercase;
@@ -77,6 +78,14 @@
   line-height: 16px;
   letter-spacing: 0.05em;
   justify-self: flex-end;
+}
+
+.offers__link--white:focus {
+  color: #62a9e2;
+}
+
+.offers__link--blue:focus {
+  color: #ed0233;
 }
 
 .offers__item {

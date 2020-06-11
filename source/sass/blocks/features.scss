@@ -104,11 +104,22 @@
   font-weight: 700;
 }
 
+.features__quantity--center {
+  color: #ffffff;
+  background: none;
+}
+
 @supports (-webkit-text-fill-color: transparent) {
   .features__quantity {
     background: linear-gradient(-225deg, #b80027, #003d85);
     background-clip: text;
     -webkit-text-fill-color: transparent;
+  }
+
+  .features__quantity--center {
+    color: #ffffff;
+    background: none;
+    -webkit-text-fill-color: unset;
   }
 }
 
