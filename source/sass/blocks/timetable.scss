@@ -1,0 +1,17 @@
+.timetable {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.timetable__wrapper {
+  @include container-desktop;
+}
+
+.timetable__wrapper h1 {
+  text-align: center;
+  margin-bottom: 62px;
+}
+
+.timetable__table {
+  width: 100%;
+}

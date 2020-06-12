@@ -1,0 +1,34 @@
+.table {
+  font-family: $content-font;
+  color: #102654;
+  font-size: 18px;
+  line-height: 1.5;
+  text-align: center;
+  border-spacing: 8px;
+  user-select: none;
+}
+
+.table__block {
+  background-color: #f8f9fc;
+  cursor: pointer;
+}
+
+.table__block:not(:first-of-type) {
+  width: 149px;
+}
+
+.table__block--transparent {
+  background-color: transparent;
+}
+
+.table__row--days td:not(:first-of-type) {
+  border: 2px solid #1c3374;
+  background-color: #ffffff;
+  height: 66px;
+}
+
+.table__block--time {
+  border: 2px solid #1c3374;
+  background-color: #ffffff;
+  height: 110px;
+}
