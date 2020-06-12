@@ -33,7 +33,7 @@
   padding-bottom: 88px;
 }
 
-.promo__title {
+.promo h2 {
   padding-right: 50px;
   padding-bottom: 10px;
   margin: 0;
@@ -58,7 +58,7 @@
   border-top: 1px solid #ffffff;
 }
 
-.promo__note {
+.promo__content p {
   font-size: 18px;
   line-height: 1.5;
   font-family: $content-font;
@@ -73,7 +73,9 @@
 }
 
 .promo__button:focus {
-  outline: 4px solid #000145;
+  background-color: #ffffff;
+  border-color: #ed0233;
+  color: #ed0233;
 }
 
 .promo__button:hover {
@@ -129,7 +131,7 @@
     padding-top: 33px;
   }
 
-  .promo__title {
+  .promo h2 {
     font-size: 52px;
     padding-right: 30px;
     padding-bottom: 0;
@@ -139,7 +141,7 @@
     width: 100%;
   }
 
-  .promo__note {
+  .promo__content p {
     font-size: 12px;
     padding-bottom: 29px;
   }
@@ -216,7 +218,7 @@
     font-weight: 500;
   }
 
-  .promo__title {
+  .promo h2 {
     font-size: 52px;
     padding-right: 30px;
     padding-bottom: 0;
@@ -251,7 +253,7 @@
     padding-bottom: 0;
   }
 
-  .promo__note {
+  .promo__content p {
     font-size: 12px;
     padding-bottom: 29px;
   }

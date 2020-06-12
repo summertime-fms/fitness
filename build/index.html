@@ -3,11 +3,10 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="css/swiper.css">
     <link rel="stylesheet" href="css/style.min.css">
     <title>Проект Fitness</title>
   </head>
-  <body>
+  <body class="page-body">
     <div style="display: none;">
       <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"><symbol id="icon-fb" viewBox="0 0 12 24">
 <path d="M11.5481 0.0049936L8.66986 0C5.43624 0 3.34653 2.31828 3.34653 5.90643V8.62969H0.452578C0.202506 8.62969 0 8.84891 0 9.11932V13.065C0 13.3354 0.202736 13.5544 0.452578 13.5544H3.34653V23.5106C3.34653 23.781 3.54904 24 3.79911 24H7.5749C7.82497 24 8.02748 23.7808 8.02748 23.5106V13.5544H11.4112C11.6613 13.5544 11.8638 13.3354 11.8638 13.065L11.8652 9.11932C11.8652 8.98948 11.8174 8.86514 11.7326 8.77326C11.6479 8.68138 11.5324 8.62969 11.4123 8.62969H8.02748V6.32115C8.02748 5.21157 8.27201 4.64829 9.60873 4.64829L11.5477 4.64755C11.7975 4.64755 12 4.42833 12 4.15817V0.494367C12 0.224462 11.7977 0.00549296 11.5481 0.0049936Z"></path>
@@ -21,8 +20,8 @@
     </div>
     <header class="page-header">
       <div class="page-header__wrapper">
-        <a class="page-header__logo" href="#" title="Supergym" aria-label="Supergym logo">
-          <img class="page-header__logo-image" src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
+        <a class="page-header__logo" title="Supergym" aria-label="Supergym logo">
+          <img src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
         </a>
         <a class="page-header__phone" href="tel:+78005555555">8-800-555-55-55</a>
       </div>
@@ -31,8 +30,8 @@
       <section class="intro">
         <div class="intro__wrapper">
           <div class="intro__text-content">
-            <span class="intro__town">Омск</span>
-            <h1 class="intro__title">Фитнес<br> центр</h1>
+            <span>Омск</span>
+            <h1>Фитнес<br> центр</h1>
             <ul class="intro__services-list">
               <li class="intro__service-item">Тренажёрный зал</li>
               <li class="intro__service-item">Групповые занятия</li>
@@ -58,7 +57,7 @@
       <section class="about-us">
         <div class="about-us__text-content">
           <h2 class="about-us__title title">Тренажерный зал</h2>
-          <span class="about-us__note">Просторный зал площадью 900 кв/м</span>
+          <span>Просторный зал площадью 900 кв/м</span>
           <p class="about-us__text">
             Supergym – самый большой фитнес центр за Уралом и идеальное место для укрепления тела и здоровья.
             Тренажерный зал оснащен всем необходимым современным оборудованием для всех спортсменов.
@@ -70,12 +69,9 @@
         </div>
         <div class="about-us__image-wrapper">
           <picture>
-            <source type="image/webp" media="(max-width: 767px) and (min-width: 320px)" srcset="img/gym-mobile@1x.webp 1x, img/gym-mobile@2x.webp 2x">
-            <source type="image/webp" media="(max-width: 1199px) and (min-width: 768px)" srcset="img/gym-tablet@1x.webp 1x, img/gym-tablet@2x.webp 2x">
             <source type="image/webp" srcset="img/gym-desktop@1x.webp 1x, img/gym-desktop@2x.webp 2x">
-            <source media="(max-width: 767px) and (min-width: 320px)" srcset="img/gym-mobile@1x.png 1x, img/gym-mobile@2x.png 2x">
-            <source media="(max-width: 1199px) and (min-width: 768px)" srcset="img/gym-tablet@1x.png 1x, img/gym-tablet@2x.png 2x">
-            <img class="about-us__image" src="img/gym-desktop@1x.png" srcset="img/gym-desktop@2x.png 2x" alt="Наш зал" width="660" height="401">
+              <!-- 1х: 660px; 2x: 1320px -->
+            <img src="img/gym-desktop@1x.png" srcset="img/gym-desktop@2x.png 2x" alt="Наш зал" width="660" height="401">
           </picture>
         </div>
         <a class="about-us__video-link" href="#" title="Смотреть видео" aria-label="Смотреть видео">
@@ -105,78 +101,78 @@
             <div class="catalog__items">
               <div class="catalog__items-group catalog__items-group--first">
                 <article class="catalog__item product">
-                  <h3 class="product__title">С тренером</h3>
-                  <small class="product__note">12 занятий</small>
+                  <h3>С тренером</h3>
+                  <small>12 занятий</small>
                   <div class="product__price-wrapper" data-parent="5000">
-                    <span class="product__price">5000</span>
+                    <span>5000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product catalog__item--active">
-                  <h3 class="product__title">Дневной</h3>
-                  <small class="product__note">С 8:00 до 17:00</small>
+                  <h3>Дневной</h3>
+                  <small>С 8:00 до 17:00</small>
                   <div class="product__price-wrapper" data-parent="1700">
-                    <span class="product__price">1700</span>
+                    <span>1700</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product">
-                  <h3 class="product__title">Полный день</h3>
-                  <small class="product__note">С 8:00 до 22:00</small>
+                  <h3>Полный день</h3>
+                  <small>С 8:00 до 22:00</small>
                   <div class="product__price-wrapper" data-parent="2700">
-                    <span class="product__price">2700</span>
+                    <span>2700</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
               </div>
               <div class="catalog__items-group catalog__items-group--second">
                 <article class="catalog__item product">
-                  <h3 class="product__title">С тренером</h3>
-                  <small class="product__note">72 занятия</small>
+                  <h3>С тренером</h3>
+                  <small>72 занятия</small>
                   <div class="product__price-wrapper" data-parent="25000">
-                    <span class="product__price">25000</span>
+                    <span>25000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product catalog__item--active">
-                  <h3 class="product__title">Дневной</h3>
-                  <small class="product__note">С 8:00 до 17:00</small>
+                  <h3>Дневной</h3>
+                  <small>С 8:00 до 17:00</small>
                   <div class="product__price-wrapper" data-parent="9000">
-                    <span class="product__price">9000</span>
+                    <span>9000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product">
-                  <h3 class="product__title">Полный день</h3>
-                  <small class="product__note">С 8:00 до 22:00</small>
+                  <h3>Полный день</h3>
+                  <small>С 8:00 до 22:00</small>
                   <div class="product__price-wrapper" data-parent="15000">
-                    <span class="product__price">15000</span>
+                    <span>15000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
               </div>
               <div class="catalog__items-group catalog__items-group--third">
                 <article class="catalog__item product">
-                  <h3 class="product__title">С тренером</h3>
-                  <small class="product__note">150 занятий</small>
+                  <h3>С тренером</h3>
+                  <small>150 занятий</small>
                   <div class="product__price-wrapper" data-parent="40000">
-                    <span class="product__price">40000</span>
+                    <span>40000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product catalog__item--active">
-                  <h3 class="product__title">Дневной</h3>
-                  <small class="product__note">С 8:00 до 17:00</small>
+                  <h3>Дневной</h3>
+                  <small>С 8:00 до 17:00</small>
                   <div class="product__price-wrapper" data-parent="15700">
-                    <span class="product__price">15700</span>
+                    <span>15700</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
                 <article class="catalog__item product">
-                  <h3 class="product__title">Полный день</h3>
-                  <small class="product__note">С 8:00 до 22:00</small>
+                  <h3>Полный день</h3>
+                  <small>С 8:00 до 22:00</small>
                   <div class="product__price-wrapper" data-parent="40000">
-                    <span class="product__price">40000</span>
+                    <span>40000</span>
                   </div>
                   <a class="product__button button" href="#">Купить абонемент</a>
                 </article>
@@ -190,7 +186,7 @@
           <div class="promo__inner">
             <div class="promo__content">
               <div class="promo__details">
-                <h2 class="promo__title">Super<br>games</h2>
+                <h2>Super<br>games</h2>
                   <div class="promo__date-wrapper">
                     <div class="promo__date promo__date--day">
                       <span class="promo__date-label">Дата</span>
@@ -202,7 +198,7 @@
                     </div>
                   </div>
                 </div>
-                <p class="promo__note">Ежегодные соревнования по CrossFit</p>
+                <p>Ежегодные соревнования по CrossFit</p>
                 <a class="promo__button button" href="#">Заполнить заявку</a>
               </div>
               <div class="promo__image"></div>
@@ -211,7 +207,7 @@
         </section>
         <section class="coaches">
           <div class="coaches__wrapper">
-            <h2 class="coaches__title title">Тренеры</h2>
+            <h2 class="title">Тренеры</h2>
             <div class="coaches__slider__inner">
               <div class="coaches__slider-wrapper swiper-container">
                 <div class="coaches__slider swiper-wrapper">
@@ -219,11 +215,12 @@
                     <b class="coaches__slide-name">Анна Павлова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-1@1x.webp 1x, img/coach-1@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-1@1x.jpg" srcset="img/coach-1@2x.jpg 2x" alt="Анна Павлова. Certified Level 3 Trainer. Опыт - 5 лет" width="260" height="294">
                     </picture>
                     <div class="coaches__info">
                       <b class="coaches__name">Анна Павлова</b>
-                      <span class="coaches__kind-of-sport">Pilates</span>
+                      <span>Pilates</span>
                       <ul class="coaches__features">
                         <li class="coaches__feature">Certified Level 3 Trainer</li>
                         <li class="coaches__feature">Победитель чемпионата мира по Pilates</li>
@@ -235,11 +232,12 @@
                     <b class="coaches__slide-name">Алексей Лавров</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-2@1x.webp 1x, img/coach-2@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-2@1x.jpg" srcset="img/coach-2@2x.jpg 2x" alt="Алексей Лавров. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                     <div class="coaches__info">
                       <b class="coaches__name">Алексей Лавров</b>
-                      <span class="coaches__kind-of-sport">Body sculpt</span>
+                      <span>Body sculpt</span>
                       <ul class="coaches__features">
                         <li class="coaches__feature">Certified Level 3 Trainer</li>
                         <li class="coaches__feature">Победитель чемпионата мира по Body sculpt</li>
@@ -251,11 +249,12 @@
                     <b class="coaches__slide-name">Александр Пашков</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-3@1x.webp 1x, img/coach-3@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-3@1x.jpg" srcset="img/coach-3@2x.jpg 2x" alt="Александр Пашков. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                     <div class="coaches__info">
                       <b class="coaches__name">Александр Пашков</b>
-                      <span class="coaches__kind-of-sport">Cross Fit</span>
+                      <span>Cross Fit</span>
                       <ul class="coaches__features">
                         <li class="coaches__feature">Certified Level 3 Trainer</li>
                         <li class="coaches__feature">Победитель чемпионата России по Cross Fit</li>
@@ -267,11 +266,12 @@
                     <b class="coaches__slide-name">Мария Кетова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-4@1x.webp 1x, img/coach-4@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-4@1x.jpg" srcset="img/coach-4@2x.jpg 2x" alt="Мария Кетова. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                     <div class="coaches__info">
                       <b class="coaches__name">Мария Кетова</b>
-                      <span class="coaches__kind-of-sport">Stretching</span>
+                      <span>Stretching</span>
                       <ul class="coaches__features">
                         <li class="coaches__feature">Certified Level 3 Trainer</li>
                         <li class="coaches__feature">Победитель чемпионата мира по Stretching</li>
@@ -283,6 +283,7 @@
                     <b class="coaches__slide-name">Анна Павлова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-1@1x.webp 1x, img/coach-1@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-1@1x.jpg" srcset="img/coach-1@2x.jpg 2x" alt="Анна Павлова. Certified Level 3 Trainer. Опыт - 5 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -290,6 +291,7 @@
                     <b class="coaches__slide-name">Алексей Лавров</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-2@1x.webp 1x, img/coach-2@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-2@1x.jpg" srcset="img/coach-2@2x.jpg 2x" alt="Алексей Лавров. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -297,6 +299,7 @@
                     <b class="coaches__slide-name">Александр Пашков</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-3@1x.webp 1x, img/coach-3@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-3@1x.jpg" srcset="img/coach-3@2x.jpg 2x" alt="Александр Пашков. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -304,6 +307,7 @@
                     <b class="coaches__slide-name">Мария Кетова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-4@1x.webp 1x, img/coach-4@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-4@1x.jpg" srcset="img/coach-4@2x.jpg 2x" alt="Мария Кетова. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -311,6 +315,7 @@
                     <b class="coaches__slide-name">Анна Павлова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-1@1x.webp 1x, img/coach-1@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-1@1x.jpg" srcset="img/coach-1@2x.jpg 2x" alt="Анна Павлова. Certified Level 3 Trainer. Опыт - 5 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -318,6 +323,7 @@
                     <b class="coaches__slide-name">Алексей Лавров</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-2@1x.webp 1x, img/coach-2@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-2@1x.jpg" srcset="img/coach-2@2x.jpg 2x" alt="Алексей Лавров. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -325,6 +331,7 @@
                     <b class="coaches__slide-name">Александр Пашков</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-3@1x.webp 1x, img/coach-3@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-3@1x.jpg" srcset="img/coach-3@2x.jpg 2x" alt="Александр Пашков. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
@@ -332,19 +339,20 @@
                     <b class="coaches__slide-name">Мария Кетова</b>
                     <picture>
                       <source type="image/webp" srcset="img/coach-4@1x.webp 1x, img/coach-4@2x.webp 2x">
+                        <!-- 1х: 230px; 2x: 460px -->
                       <img class="coaches__image" src="img/coach-4@1x.jpg" srcset="img/coach-4@2x.jpg 2x" alt="Мария Кетова. Certified Level 3 Trainer. Опыт - 6 лет" width="260" height="294">
                     </picture>
                   </div>
                 </div>
-                <div class="slider-buttons slider-buttons--prev coaches__button-prev"></div>
-                <div class="slider-buttons slider-buttons--next coaches__button-next"></div>
+                <button type="button" class="slider-buttons slider-buttons--prev coaches__button-prev"></button>
+                <button type="button" class="slider-buttons slider-buttons--next coaches__button-next"></button>
               </div>
             </div>
           </div>
         </section>
         <section class="features">
           <div class="features__wrapper">
-            <h2 class="features__title  title">Наши преимущества</h2>
+            <h2 class="title">Наши преимущества</h2>
             <ul class="features__container">
               <li class="features__item-wrapper features__item-wrapper--square">
                 <div class="features__item">
@@ -354,7 +362,7 @@
                   </div>
                   <div class="features__text">
                     <h3 class="features__name">Площадь</h3>
-                    <p class="features__description">Занимайтесь без очередей<br> и толкучки</p>
+                    <p>Занимайтесь без очередей<br> и толкучки</p>
                   </div>
                 </div>
               </li>
@@ -414,22 +422,22 @@
               <div class="offers__unlimited">
                 <h3 class="visually-hidden">Абонемент на год за 4999!</h3>
                 <div class="offers__unlimited-text">
-                  <span class="offers__unlimited__time">Год</span>
-                  <b class="offers__unlimited-price">4999</b>
-                  <p class="offers__unlimited-description">Безлимитный абонемент в тренажерный зал</p>
+                  <span>Год</span>
+                  <b>4999</b>
+                  <p>Безлимитный абонемент в тренажерный зал</p>
                   <a class="offers__link offers__link--white" href="#">Подробнее</a>
                 </div>
                 <div class="offers__unlimited-image"></div>
               </div>
               <div class="offers__items-group">
                 <div class="offers__item">
-                  <h3 class="offers__name">Месяц бесплатно</h3>
-                  <p class="offers__description">Приведи друга, получи<br class="offers__wrap"> абонемент в подарок</p>
+                  <h3>Месяц бесплатно</h3>
+                  <p>Приведи друга, получи<br class="offers__wrap"> абонемент в подарок</p>
                   <a class="offers__link offers__link--blue" href="#">Подробнее</a>
                 </div>
                 <div class="offers__item">
-                  <h3 class="offers__name">Скидка 20%</h3>
-                  <p class="offers__description">Корпоративный фитнес с командой</p>
+                  <h3>Скидка 20%</h3>
+                  <p>Корпоративный фитнес с командой</p>
                   <a class="offers__link offers__link--blue" href="#">Подробнее</a>
                 </div>
               </div>
@@ -438,7 +446,7 @@
         </section>
         <section class="comments">
           <div class="comments__wrapper">
-            <h2 class="comments__title title">Отзывы</h2>
+            <h2 class="title">Отзывы</h2>
             <div class="comments__slider-wrapper">
               <div class="comments__slider swiper-container">
                 <ul class="comments__slider-inner swiper-wrapper">
@@ -446,12 +454,13 @@
                     <div class="comments__image">
                       <picture>
                         <source type="image/webp" srcset="img/author-photo@1x.webp 1x, img/author-photo@2x.webp 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
                         <img src="img/author-photo@1x.png" srcset="img/author-photo@2x.png 2x" width="80" height="80" alt="Анна Орлова">
                       </picture>
                     </div>
                     <blockquote class="comments__content">
-                      <b class="comments__author">Анна Орлова</b>
-                      <p class="comments__text">
+                      <b>Анна Орлова</b>
+                      <p>
                         «Хожу в SuperClub уже больше года. Нравится,
                         что в клубе всегда чисто, тренажеры обновляют,
                         персонал дружелюбный. Зал просторный, даже
@@ -463,12 +472,13 @@
                     <div class="comments__image">
                       <picture>
                         <source type="image/webp" srcset="img/author-photo@1x.webp 1x, img/author-photo@2x.webp 2x">
+                          <!-- 1х: 80px; 2x: 160px -->
                         <img src="img/author-photo@1x.png" srcset="img/author-photo@2x.png 2x" width="80" height="80" alt="Анна Орлова">
                       </picture>
                     </div>
                     <blockquote class="comments__content">
-                      <b class="comments__author">Анна Орлова</b>
-                      <p class="comments__text">
+                      <b>Анна Орлова</b>
+                      <p>
                         «Хожу в SuperClub уже больше года. Нравится,
                         что в клубе всегда чисто, тренажеры обновляют,
                         персонал дружелюбный. Зал просторный, даже
@@ -477,8 +487,8 @@
                     </blockquote>
                   </li>
                 </ul>
-                <div class="slider-buttons slider-buttons--prev comments__button-prev"></div>
-                <div class="slider-buttons slider-buttons--next comments__button-next"></div>
+                <button type="button" class="slider-buttons slider-buttons--prev comments__button-prev"></button>
+                <button type="button" class="slider-buttons slider-buttons--next comments__button-next"></button>
               </div>
             </div>
           </div>
@@ -487,11 +497,11 @@
           <div class="pre-footer-wrapper__container container">
             <section class="pre-footer-wrapper__form form">
               <div class="form__wrapper">
-                <h2 class="form__title title">Бесплатное занятие</h2>
+                <h2 class="title">Бесплатное занятие</h2>
                 <form class="form__inner" method="POST" action="#">
                   <div class="form__fields">
-                    <input class="form__field form__field--name" type="text" name="user-name" placeholder="Имя">
-                    <input class="form__field form__field--phone" type="tel" name="phone-number" minlength="17" maxlength="17" value="" placeholder="Телефон">
+                    <input type="text" name="user-name" placeholder="Имя">
+                    <input type="tel" name="phone-number" minlength="17" value="" placeholder="Телефон" pattern="\+7\-[0-9]{3}\-[0-9]{3}\-[0-9]{2}\-[0-9]{2}" title="В формате +7-XXX-XX-XX" onkeyup="this.value = this.value.replace(/[^\d]/g,'');">
                   </div>
                   <div class="form__button-wrapper">
                     <button class="form__button button" type="submit">Отправить</button>
@@ -501,26 +511,29 @@
             </section>
             <section class="pre-footer-wrapper__contacts contacts">
               <div class="contacts__wrapper">
-                <h2 class="contacts__title title">Контакты</h2>
+                <h2 class="title">Контакты</h2>
                 <div class="contacts__inner">
                   <div class="contacts__group">
                     <div class="contacts__item">
-                      <b class="contacts__name">Адрес:</b>
-                      <p class="contacts__text">г. Омск, ул. 60 лет Октября, 7</p>
+                      <b>Адрес:</b>
+                      <p>г. Омск, ул. 60 лет Октября, 7</p>
                     </div>
                     <div class="contacts__item">
-                      <b class="contacts__name">График работы:</b>
-                      <p class="contacts__text">Пн-Вс: с 8:00 до 22:00</p>
+                      <b>График работы:</b>
+                      <p>Пн-Вс: с 8:00 до 22:00</p>
                     </div>
                   </div>
                   <div class="contacts__group">
                     <div class="contacts__item">
-                      <b class="contacts__name">Телефон:</b>
-                      <p class="contacts__text">8-800-555-55-55</p>
+                      <b>Телефон:</b>
+                      <p>
+                        <a class="contacts__phone" href="tel:+78005555555">8-800-555-55-55</a></p>
                     </div>
                     <div class="contacts__item">
-                      <b class="contacts__name">Email:</b>
-                      <p class="contacts__text">omsk@supergym.ru</p>
+                      <b>Email:</b>
+                      <p>
+                        <a class="contacts__mail" href="mailto:omsk@supergym.ru">omsk@supergym.ru</a>
+                      </p>
                     </div>
                   </div>
                 </div>
@@ -532,8 +545,8 @@
       <footer class="page-footer">
         <div class="page-footer__wrapper">
           <div class="page-footer__inner">
-            <a class="page-footer__logo-wrapper" href="#" title="Supergym" aria-label="Supergym logo">
-              <img class="page-footer__logo-image" src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
+            <a class="page-footer__logo-wrapper" title="Supergym" aria-label="Supergym logo">
+              <img src="img/logo.svg" alt="Fitness-centr Supergym" width="89" height="20">
             </a>
             <nav class="page-footer__nav">
               <ul class="page-footer__nav-list">

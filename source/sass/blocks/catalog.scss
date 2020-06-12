@@ -36,7 +36,7 @@
   margin-right: 40px;
 }
 
-.catalog__title {
+.catalog__wrapper h2 {
   text-align: center;
   padding-bottom: 35px;
   overflow-wrap: anywhere;
@@ -117,7 +117,7 @@
   border: 8px solid transparent;
   border-image: linear-gradient(-225deg, rgb(184, 0, 39), #003d85) 30;
 
-  padding: 53px 75px;
+  padding: 53px 71px;
 }
 
 .catalog__items {
@@ -153,7 +153,7 @@
     }
   }
 
-  .catalog__wrapper {
+  .catalog__wrapper h2 {
     padding-top: 99px;
 
     min-width: 768px;
@@ -215,7 +215,7 @@
     padding-top: 71px;
   }
 
-  .catalog__title {
+  .catalog__wrapper h2 {
     padding-bottom: 23px;
   }
 

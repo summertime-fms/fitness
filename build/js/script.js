@@ -56,7 +56,7 @@ return maxHeight
 const mainBlockLink = document.querySelector(".intro__button");
 
 mainBlockLink.addEventListener("click", function(evt) {
- evt.preventDefault();
+  evt.preventDefault();
   let href = $(this).attr('href');
 
   $('html, body').animate({

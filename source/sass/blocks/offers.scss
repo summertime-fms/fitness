@@ -49,19 +49,19 @@
   }
 }
 
-.offers__unlimited__time {
+.offers__unlimited-text span {
   font-size: 28px;
   line-height: 1.56;
 }
 
-.offers__unlimited-price {
+.offers__unlimited-text b {
   display: block;
   font-size: 70px;
   line-height: 1;
   padding-bottom: 15px;
 }
 
-.offers__unlimited-description {
+.offers__unlimited-text p {
   margin: 0;
   font-size: 18px;
   line-height: 1.4;
@@ -118,7 +118,7 @@
   margin-bottom: 40px;
 }
 
-.offers__name {
+.offers__item h3 {
   margin: 0;
   font-size: 26px;
   line-height: 1.5;
@@ -126,7 +126,7 @@
   font-weight: 700;
 }
 
-.offers__description {
+.offers__item p {
   font-size: 16px;
   margin: 0;
   line-height: 1.4;
@@ -183,7 +183,7 @@
     margin-bottom: 30px;
   }
 
-  .offers__unlimited-description {
+  .offers__unlimited-text p {
     padding-bottom: 188px;
   }
 
@@ -223,7 +223,7 @@
   }
 
 
-  .offers__description {
+  .offers__item p {
     margin-bottom: 25px;
   }
 
@@ -260,7 +260,7 @@
     }
   }
 
-  .offers__unlimited-description {
+  .offers__unlimited-text p {
     padding-bottom: 26px;
   }
 
@@ -269,4 +269,3 @@
     margin-top: 0;
   }
 }
-

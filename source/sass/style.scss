@@ -3,6 +3,7 @@
 @import "fonts.scss";
 @import "blocks/visually-hidden";
 @import "base.scss";
+@import "blocks/page-body";
 @import "blocks/button.scss";
 @import "blocks/title.scss";
 @import "blocks/page-header.scss";
@@ -11,6 +12,7 @@
 @import "blocks/product.scss";
 @import "blocks/catalog.scss";
 @import "blocks/promo.scss";
+@import "swiper.scss";
 @import "blocks/slider-buttons.scss";
 @import "blocks/coaches.scss";
 @import "blocks/features.scss";
@@ -22,4 +24,3 @@
 @import "blocks/contacts.scss";
 @import "blocks/page-footer.scss";
 @import "blocks/socials.scss"
-

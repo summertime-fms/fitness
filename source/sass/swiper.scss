@@ -154,14 +154,6 @@
   scroll-snap-type: y mandatory;
 }
 
-:root {
-  --swiper-navigation-size: 44px;
-  /*
-  --swiper-navigation-color: var(--swiper-theme-color);
-  */
-}
-
-
 .swiper-button-prev.swiper-button-disabled,
 .swiper-button-next.swiper-button-disabled {
   opacity: 0.35;
@@ -174,11 +166,6 @@
   display: none;
 }
 
-:root {
-  /*
-  --swiper-pagination-color: var(--swiper-theme-color);
-  */
-}
 
 .swiper-pagination {
   position: absolute;
@@ -234,24 +221,6 @@
   transform: scale(0.33);
 }
 
-.swiper-pagination-bullet {
-  width: 8px;
-  height: 8px;
-  display: inline-block;
-  border-radius: 100%;
-  background: #000000;
-  opacity: 0.2;
-}
-
-button.swiper-pagination-bullet {
-  border: none;
-  margin: 0;
-  padding: 0;
-  box-shadow: none;
-  -webkit-appearance: none;
-  -moz-appearance: none;
-  appearance: none;
-}
 
 .swiper-pagination-clickable .swiper-pagination-bullet {
   cursor: pointer;
@@ -353,7 +322,6 @@ button.swiper-pagination-bullet {
 .swiper-scrollbar {
   border-radius: 10px;
   position: relative;
-  -ms-touch-action: none;
   background: rgba(0, 0, 0, 0.1);
 }
 
@@ -414,11 +382,6 @@ button.swiper-pagination-bullet {
   cursor: move;
 }
 /* Preloader */
-:root {
-  /*
-  --swiper-preloader-color: var(--swiper-theme-color);
-  */
-}
 
 .swiper-lazy-preloader {
   width: 42px;
@@ -484,7 +447,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-cube .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
   visibility: hidden;
@@ -519,7 +481,6 @@ button.swiper-pagination-bullet {
 .swiper-container-cube .swiper-slide-shadow-left,
 .swiper-container-cube .swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }
 
@@ -531,7 +492,6 @@ button.swiper-pagination-bullet {
   height: 100%;
   background: #000000;
   opacity: 0.6;
-  -webkit-filter: blur(50px);
   filter: blur(50px);
   z-index: 0;
 }
@@ -542,7 +502,6 @@ button.swiper-pagination-bullet {
 
 .swiper-container-flip .swiper-slide {
   pointer-events: none;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   z-index: 1;
 }
@@ -561,6 +520,5 @@ button.swiper-pagination-bullet {
 .swiper-container-flip .swiper-slide-shadow-left,
 .swiper-container-flip .swiper-slide-shadow-right {
   z-index: 0;
-  -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
 }

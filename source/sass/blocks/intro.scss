@@ -51,7 +51,7 @@
   align-self: flex-end;
 }
 
-.intro__town {
+.intro__text-content span {
   font-family: $titles-font;
   font-size: 49px;
   line-height: 1;
@@ -64,7 +64,7 @@
   user-select: none;
 }
 
-.intro__title {
+.intro__text-content h1 {
   margin: 0;
   font-family: $titles-font;
   font-size: 109px;
@@ -143,12 +143,12 @@
     background-position: 90% 19px;
   }
 
-  .intro__town {
+  .intro__text-content span {
     font-size: 34px;
     padding-bottom: 6px;
   }
 
-  .intro__title {
+  .intro__text-content h1 {
     font-size: 86px;
     padding: 0;
     font-weight: 700;
@@ -186,11 +186,11 @@
     display: none;
   }
 
-  .intro__town {
+  .intro__text-content span {
     font-size: 28px;
   }
 
-  .intro__title {
+  .intro__text-content h1 {
     font-size: 78px;
   }
 

@@ -10,7 +10,7 @@
   align-items: center;
 }
 
-.coaches__title {
+.coaches h2 {
   padding-bottom: 53px;
   align-self: flex-start;
 }
@@ -67,6 +67,11 @@
   bottom: 24px;
 }
 
+.coaches__info b {
+  color: #ffffff;
+  display: block;
+}
+
 .coaches__slide:hover .coaches__info {
   display: block;
   cursor: pointer;
@@ -76,7 +81,7 @@
   display: none;
 }
 
-.coaches__image:hover {
+.coaches__slide img:hover {
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
 }
 
@@ -87,7 +92,7 @@
   line-height: 1.5;
 }
 
-.coaches__kind-of-sport {
+.coaches__info span {
   display: block;
   text-align: center;
   color: #b6bdcc;
@@ -101,7 +106,6 @@
 .coaches__features {
   margin: 0;
   padding-top: 29px;
-  padding-left: 71px;
   font-size: 14px;
 }
 
@@ -117,7 +121,7 @@
     padding-bottom: 102px;
   }
 
-  .coaches__title {
+  .coaches h2 {
     align-self: center;
     padding-bottom: 40px;
   }
@@ -153,7 +157,7 @@
     padding-bottom: 66px;
   }
 
-  .coaches__title {
+  .coaches h2 {
     padding-bottom: 43px;
     align-self: center;
   }

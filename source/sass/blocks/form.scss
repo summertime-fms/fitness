@@ -5,13 +5,13 @@
   padding: 0;
 }
 
-.form__title {
+.form__wrapper h2 {
   margin-bottom: 36px;
   color: #ffffff;
   padding-top: 70px;
 }
 
-.form__field {
+.form__fields input {
   margin: 0 13px;
   padding-top: 10px;
   padding-bottom: 10px;
@@ -31,12 +31,16 @@ input::placeholder {
   color: #ffffff;
 }
 
-.form__field:focus::placeholder {
+.form__fields input:focus::placeholder {
   color: transparent;
   padding-left: 15px;
 }
 
-.form__field:focus {
+.form__fields input:hover {
+  border-top: 1px solid #f2f2f2;
+}
+
+.form__fields input:focus {
   outline: none;
   border-top: 1px solid #f2f2f2;
 }
@@ -49,7 +53,9 @@ input::placeholder {
 }
 
 .form__button:focus {
-  outline: 4px solid #cb2222;
+  background-color: #ffffff;
+  color: #102654;
+  border-color: #ffffff;
 }
 
 .form__fields {
@@ -78,7 +84,7 @@ input::placeholder {
     margin-bottom: 34px;
   }
 
-  .form__title {
+  .form__wrapper h2 {
     margin-bottom: 28px;
   }
 
@@ -87,7 +93,7 @@ input::placeholder {
     margin-left: -30px;
   }
 
-  .form__field {
+  .form__fields input {
     min-width: 205px;
     margin: 0 30px;
   }
@@ -106,7 +112,7 @@ input::placeholder {
     @include container-mobile;
   }
 
-  .form__field {
+  .form__fields input {
     width: 100%;
   }
 
@@ -114,11 +120,11 @@ input::placeholder {
     width: 100%;
   }
 
-  .form__title {
+  .form__wrapper h2 {
     margin-bottom: 29px;
   }
 
-  .form__field:not(:last-of-type) {
+  .form__fields input:not(:last-of-type) {
     margin-bottom: 23px;
   }
 }

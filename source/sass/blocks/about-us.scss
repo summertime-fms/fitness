@@ -54,14 +54,14 @@
 .about-us__image-wrapper {
   width: 660px;
   background-color: #d3d3de;
-  align-self: baseline;
+  align-self: stretch;
 }
 
 .about-us__title {
   padding-bottom: 8px;
 }
 
-.about-us__note {
+.about-us__text-content span {
   display: block;
   padding-bottom: 27px;
   font-family: $content-font;
@@ -70,7 +70,7 @@
   line-height: 1.5;
 }
 
-.about-us__text {
+.about-us__text-content p {
   font-family: $content-font;
   font-weight: 300;
   font-size: 16px;
@@ -105,11 +105,11 @@
     padding-bottom: 34px;
   }
 
-  .about-us__note {
+  .about-us__text-content span {
     text-align: center;
   }
 
-  .about-us__text {
+  .about-us__text-content p {
     text-align: center;
   }
 
@@ -145,7 +145,7 @@
     display: none;
   }
 
-  .about-us__note {
+  .about-us__text-content span {
     padding-bottom: 13px;
   }
 
@@ -174,14 +174,12 @@
     z-index: 3;
     min-height: 171px;
 
-
-
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-image: url("../img/video-mobile@2x.png");
     }
   }
 
-  .about-us__text {
+  .about-us__text-content p {
     width: 90%;
   }
 

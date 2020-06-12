@@ -31,9 +31,9 @@
 
 $( document ).ready(function(){
 function getMaxHeight() {
-  var comments = document.getElementsByClassName("comments__slide");
+  let comments = document.getElementsByClassName("comments__slide");
 
-  var maxHeight = 0;
+  let maxHeight = 0;
 
       for (var i = 0; i < comments.length; i++) {
         let elemHeight = getHeight(comments[i])
@@ -53,10 +53,10 @@ return maxHeight
 }
 
 
-const mainBlockLink = document.querySelector(".intro__button");
+let mainBlockLink = document.querySelector(".intro__button");
 
 mainBlockLink.addEventListener("click", function(evt) {
- evt.preventDefault();
+  evt.preventDefault();
   let href = $(this).attr('href');
 
   $('html, body').animate({
@@ -69,8 +69,8 @@ mainBlockLink.addEventListener("click", function(evt) {
   return false;
 });
 
-const tabs = document.querySelector(".catalog__tabs");
-const toggler = document.querySelector(".catalog__toggler");
+let tabs = document.querySelector(".catalog__tabs");
+let toggler = document.querySelector(".catalog__toggler");
 
 tabs.onclick = function(evt) {
   evt.preventDefault();
@@ -109,7 +109,6 @@ tabs.onclick = function(evt) {
     itemGroups[2].style.display ="flex";
   }
 }
-
 
                 // ***Sliders***
 
