@@ -34,6 +34,7 @@
   color: #ffffff;
   font-weight: 700;
   width: 50%;
+  padding-bottom: 45px;
 }
 
 .offers__unlimited-image {
@@ -58,7 +59,7 @@
   display: block;
   font-size: 70px;
   line-height: 1;
-  padding-bottom: 15px;
+  padding-bottom: 18px;
 }
 
 .offers__unlimited-text p {
@@ -66,7 +67,7 @@
   font-size: 18px;
   line-height: 1.4;
   font-weight: 400;
-  padding-bottom: 200px;
+  padding-bottom: 189px;
 }
 
 .offers__link {
@@ -85,7 +86,15 @@
   color: #62a9e2;
 }
 
+.offers__link--white:hover {
+  color: #62a9e2;
+}
+
 .offers__link--blue:focus {
+  color: #ed0233;
+}
+
+.offers__link--blue:hover {
   color: #ed0233;
 }
 
@@ -136,10 +145,6 @@
   color: #1c3374;
 }
 
-.offers__wrap {
-  display: none;
-}
-
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .offers {
     padding-top: 99px;
@@ -152,7 +157,7 @@
 
   .offers__inner {
     flex-direction: column;
-    padding-top: 41px;
+    padding-top: 39px;
   }
 
   .offers__unlimited-image {
@@ -174,10 +179,6 @@
     padding-bottom: 13px;
   }
 
-  .offers__wrap {
-    display: block;
-  }
-
   .offers__unlimited {
     margin: 0;
     margin-bottom: 30px;
@@ -193,6 +194,10 @@
     margin-right: -30px;
   }
 
+  .offers__unlimited-text b {
+    padding-bottom: 15px;
+  }
+
   .offers__item {
     flex-basis: 0;
     flex-grow: 1;
@@ -203,7 +208,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .offers {
     padding-top: 67px;
     padding-bottom: 64px;

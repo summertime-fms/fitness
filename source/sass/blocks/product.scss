@@ -92,16 +92,31 @@
   .product {
     width: 100%;
     margin-right: 0;
-    padding: 65px 115px;
+    padding: 63px 115px;
     margin-bottom: 40px;
   }
 
   .product h3 {
     line-height: 29px;
+    padding-bottom: 11px;
+  }
+
+  .product small {
+    padding-bottom: 66px;
+  }
+
+  .product__price-wrapper {
+    padding-bottom: 35px;
+  }
+
+  .product__button {
+    padding-top: 24px;
+    padding-bottom: 24px;
+    margin: 0;
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .product {
     width: 100%;
     padding: 51px 42px;

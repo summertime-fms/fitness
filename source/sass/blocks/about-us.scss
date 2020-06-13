@@ -3,7 +3,7 @@
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
-  padding-top: 116px;
+  padding-top: 113px;
 
   @include container-desktop;
 }
@@ -26,22 +26,25 @@
   }
 }
 
-.about-us__video-link:focus {
-  outline: 4px solid rgb(181, 33, 33);
-}
-
-.about-us__video-overlay {
+.about-us__video-link::after {
+  content: "";
   position: relative;
+  display: block;
   background-color: rgba(20, 54, 122, 0.5);
   background-image: url("../img/play-button@1x.png");
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px 100px;
   height: 100%;
+  width: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/play-button@2x.png");
   }
+}
+
+.about-us__video-link:focus {
+  outline: 4px solid rgb(181, 33, 33);
 }
 
 .about-us__text-content {
@@ -54,7 +57,7 @@
 .about-us__image-wrapper {
   width: 660px;
   background-color: #d3d3de;
-  align-self: stretch;
+  align-self: baseline;
 }
 
 .about-us__title {
@@ -63,7 +66,7 @@
 
 .about-us__text-content span {
   display: block;
-  padding-bottom: 27px;
+  padding-bottom: 31px;
   font-family: $content-font;
   color: $titles-color;
   font-size: 18px;
@@ -96,6 +99,11 @@
 
   .about-us__image-wrapper {
     width: 100%;
+    height: 343px;
+  }
+
+  .about-us__image-wrapper img {
+    height: 100%;
   }
 
   .about-us__text-content {
@@ -107,6 +115,7 @@
 
   .about-us__text-content span {
     text-align: center;
+    padding-bottom: 24px;
   }
 
   .about-us__text-content p {
@@ -117,7 +126,7 @@
     display: none;
   }
 
-  .about-us__video-overlay {
+  .about-us__video-link::after {
     background-size: 80px 80px;
     height: 167px;
   }
@@ -134,7 +143,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .about-us {
     padding: 0;
     padding-top: 20px;
@@ -183,7 +192,7 @@
     width: 90%;
   }
 
-  .about-us__video-overlay {
+  .about-us__video-link::after {
     background-size: 73px 73px;
   }
 }

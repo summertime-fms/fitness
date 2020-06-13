@@ -15,20 +15,25 @@
 .page-footer__inner {
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 
 .page-footer__nav {
   display: flex;
+  margin: 0 auto;
+  width: 39%;
 }
 
 .page-footer__nav-list {
   @include list-default;
+  flex-wrap: wrap;
   display: flex;
 }
 
 .page-footer__logo-wrapper {
   display: block;
-  width: 90px;
+  width: 87px;
+  margin-right: 40px;
   height: 20px;
 }
 
@@ -71,7 +76,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .page-footer {
 
     font-size: 16px;

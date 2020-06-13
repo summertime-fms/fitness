@@ -30,7 +30,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .pre-footer-wrapper {
     background: none;
   }

@@ -34,7 +34,7 @@
   @include container-desktop;
   background-image: url("../img/welcome-photo@1x.jpg");
   background-repeat: no-repeat;
-  background-position: 69.4% 0;
+  background-position: 68.4% 0;
   background-size: 42% 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -43,7 +43,7 @@
 }
 
 .intro__text-content {
-  padding-top: 111px;
+  padding-top: 118px;
   width: 34%;
 }
 
@@ -59,7 +59,7 @@
   letter-spacing: 0.03em;
   text-transform: uppercase;
   text-align: right;
-  padding-bottom: 14px;
+  padding-bottom: 12px;
 
   user-select: none;
 }
@@ -101,9 +101,12 @@
 .intro__socials-item {
   font-size: 12px;
   line-height: 14px;
-  margin-bottom: 24px;
   text-transform: uppercase;
   font-family: $content-font;
+}
+
+.intro__socials-item:not(:last-of-type) {
+  margin-bottom: 21px;
 }
 
 .intro__socials-link:focus {
@@ -139,8 +142,13 @@
 
   .intro__wrapper {
     @include container-tablet;
-    background-size: 43% auto;
+    background-size: 42% auto;
     background-position: 90% 19px;
+    background-image: url("../img/welcome-photo-tablet@1x.jpg");
+
+    @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
+      background-image: url("../img/welcome-photo-tablet@2x.jpg");
+    }
   }
 
   .intro__text-content span {
@@ -156,7 +164,7 @@
 
   .intro__button {
     width: 55%;
-    margin-top: -30px;
+    margin-top: -26px;
   }
 
 
@@ -172,11 +180,11 @@
 
   .intro__services-list {
     right: 205px;
-    bottom: 85px;
+    bottom: 80px;
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .intro__wrapper {
     @include container-mobile;
     background: none;

@@ -28,7 +28,7 @@
 
   @include container-desktop;
   padding: 0;
-  padding-top: 118px;
+  padding-top: 121px;
   z-index: 3;
 }
 
@@ -113,13 +113,6 @@
   display: none;
 }
 
-.catalog__item--active {
-  border: 8px solid transparent;
-  border-image: linear-gradient(-225deg, rgb(184, 0, 39), #003d85) 30;
-
-  padding: 53px 71px;
-}
-
 .catalog__items {
   display: flex;
   flex-direction: column;
@@ -130,6 +123,12 @@
   margin-right: 0;
 }
 
+.catalog__item:hover {
+  border: 8px solid transparent;
+  border-image: linear-gradient(-225deg, rgb(184, 0, 39), #003d85) 30;
+  padding: 53px 37px;
+}
+
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .catalog__items-group {
     flex-direction: column;
@@ -138,12 +137,16 @@
     margin-right: 0;
   }
 
+  .catalog__wrapper {
+    padding: 0;
+  }
+
   .catalog__items {
     align-items: center;
   }
 
   .catalog::after {
-    bottom: -40px;
+    bottom: -108px;
     width: 345px;
     height: 425px;
     background-image: url("../img/weights-tablet.png");
@@ -154,14 +157,11 @@
   }
 
   .catalog__wrapper h2 {
-    padding-top: 99px;
-
+    padding-top: 102px;
+    padding-bottom: 31px;
     min-width: 768px;
   }
 
-  .catalog__tab:not(:last-of-type) {
-    margin-right: 55px;
-  }
 
   .catalog__title {
     padding-bottom: 32px;
@@ -179,9 +179,38 @@
   .catalog__item--active {
     padding: 53px 108px;
   }
+
+  .catalog__tabs {
+    max-width: 100%;
+    min-width: 340px;
+    flex-wrap: wrap;
+  }
+
+  .catalog__tabs-control {
+    max-width: 100%;
+    padding-bottom: 43px;
+  }
+
+  .catalog__tab {
+    margin: 0;
+  }
+
+  .catalog__item:hover {
+    padding: 55px 107px;
+    margin-bottom: 44px;
+    background-color: #f8f9fc;
+  }
+
+  .catalog__item {
+    padding-bottom: 67px;
+  }
+
+  .catalog {
+    padding-bottom: 60px;
+  }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .catalog {
     padding-bottom: 42px;
   }

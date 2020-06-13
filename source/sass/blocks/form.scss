@@ -14,7 +14,7 @@
 .form__fields input {
   margin: 0 13px;
   padding-top: 10px;
-  padding-bottom: 10px;
+  padding-bottom: 6px;
   padding-left: 5px;
   font-family: $content-font;
   font-size: 14px;
@@ -45,13 +45,20 @@ input::placeholder {
 }
 
 .form__button {
-  margin-top: 23px;
+  margin-top: 28px;
   width: 70.8%;
-  padding-top: 19px;
+  padding-top: 16px;
   font-size: 14px;
+  padding-bottom: 17px;
 }
 
 .form__button:focus {
+  background-color: #ffffff;
+  color: #102654;
+  border-color: #ffffff;
+}
+
+.form__button:hover {
   background-color: #ffffff;
   color: #102654;
   border-color: #ffffff;
@@ -89,16 +96,21 @@ input::placeholder {
 
   .form__fields {
     display: flex;
-    margin-left: -30px;
+    margin: 0;
   }
 
   .form__fields input {
     min-width: 205px;
-    margin: 0 30px;
+    flex-grow: 1;
+    margin: 0;
+  }
+
+  .form__fields input:not(:last-of-type) {
+    margin-right: 30px;
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .form {
     width: 100%;
     background-color: #102654;

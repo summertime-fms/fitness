@@ -11,7 +11,7 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .container {
     flex-direction: column;
     padding: 0;

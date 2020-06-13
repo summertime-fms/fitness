@@ -3,15 +3,16 @@
 .features {
   padding-top: 60px;
   background-color: #f8f9fc;
-  padding-bottom: 55px;
+  padding-bottom: 125px;
 }
 
 .features__item-wrapper {
   display: flex;
-  padding-top: 56px;
-  padding-bottom: 69px;
 }
 
+.features__text p {
+  margin: 0;
+}
 
 .features__wrapper {
   @include container-desktop;
@@ -22,14 +23,15 @@
 
 .features h2 {
   text-align: center;
+  padding-bottom: 59px;
 }
 
 .features__container {
   position: relative;
   display: grid;
 
-  grid-template-columns: auto 320px auto;
-  grid-template-rows: 54% 46%;
+  grid-template-columns: 343px 360px 342px;
+  grid-template-rows: 50% 50%;
 
 
   @include list-default;
@@ -59,10 +61,10 @@
   line-height: 1.5;
   color: #102654;
   display: flex;
-  padding-left: 26px;
 }
 
 .features__item-wrapper--square {
+  justify-content: flex-end;
   grid-row: 1;
   grid-column: 1;
 }
@@ -73,13 +75,16 @@
 }
 
 .features__item-wrapper--places {
+  justify-content: flex-end;
   grid-row: 2;
   grid-column: 1;
+  padding-top: 80px;
 }
 
 .features__item-wrapper--expirience {
   grid-column: 3;
   grid-row: 2;
+  padding-top: 80px;
 }
 
 .features__item-wrapper--center {
@@ -89,11 +94,13 @@
   grid-column-end: 3;
   display: flex;
   justify-content: center;
-  padding-left: 0;
+
   position: relative;
   z-index: 3;
   background-color: #f8f9fc;
-  padding-top: 68px;
+  padding-top: 10px;
+  padding-left: 60px;
+  padding-right: 60px;
 }
 
 .features__item--center {
@@ -103,6 +110,7 @@
   padding: 53px 34px;
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .features__quantity {
@@ -196,13 +204,14 @@
 
   .features__item--center {
     width: 100%;
-    padding-top: 36px;
+    padding-top: 31px;
     padding-left: 26px;
   }
 
   .features__item-wrapper--square {
     grid-column: 1;
     grid-row: 1;
+    justify-content: flex-start;
   }
 
   .features__item-wrapper--parking {
@@ -213,6 +222,7 @@
   .features__item-wrapper--places {
     grid-row: 3;
     grid-column: 1;
+    justify-content: flex-start;
   }
 
   .features__item-wrapper--expirience {
@@ -239,7 +249,7 @@
   }
 
   .features__item--center .features__number {
-    padding-bottom: 9px;
+    padding-bottom: 15px;
   }
 
   .features__title-center {
@@ -259,9 +269,13 @@
     padding-top: 44px;
     padding-bottom: 40px;
   }
+
+  .features__quantity--center {
+    font-size: 68px;
+  }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .features {
     padding-top: 69px;
     padding-bottom: 20px;

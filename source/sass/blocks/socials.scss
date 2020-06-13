@@ -46,7 +46,7 @@
   height: 24px;
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .socials {
     padding-top: 8px;
   }

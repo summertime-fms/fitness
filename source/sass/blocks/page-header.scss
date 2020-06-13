@@ -1,5 +1,6 @@
 .page-header {
   font-family: $titles-font;
+  margin-bottom: -5px;
 }
 
 .page-header__wrapper {
@@ -23,7 +24,7 @@
 }
 
 .page-header__phone:hover {
-  color: #f2f2f2;
+  color: rgba(168, 184, 233, 0.6);
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
@@ -32,9 +33,12 @@
     padding-top: 40px;
   }
 
-  .page-header__logo-wrapper {
-    width: 82px;
-    height: 17px;
+  .page-header {
+    margin-bottom: -1px;
+  }
+
+  .page-header__logo {
+    width: 80px;
   }
 
   .page-header__phone {
@@ -43,10 +47,14 @@
   }
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .page-header__wrapper {
     @include container-mobile;
     padding-top: 20px;
+  }
+
+  .page-header {
+    margin-bottom: 0;
   }
 
   .page-header__logo {

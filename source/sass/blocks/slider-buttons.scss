@@ -11,6 +11,10 @@
   border-left: 1px solid #afafaf;
 }
 
+.slider-buttons:focus {
+  outline: none;
+}
+
 .slider-buttons--prev {
   left: -40px;
 }
@@ -24,7 +28,7 @@
   border-color: #616161;
 }
 
-@media (min-width: $mobile-width) and (max-width: $mobile-maxWidth) {
+@media (max-width: $mobile-maxWidth) {
   .slider-buttons--prev {
     left: -10px;
   }
