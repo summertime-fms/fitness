@@ -37,12 +37,11 @@ input::placeholder {
 }
 
 .form__fields input:hover {
-  border-top: 1px solid #f2f2f2;
+  outline: 1px solid #f2f2f2;
 }
 
 .form__fields input:focus {
-  outline: none;
-  border-top: 1px solid #f2f2f2;
+  outline: 1px solid #f2f2f2;
 }
 
 .form__button {

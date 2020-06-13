@@ -28,6 +28,7 @@
 
 })();
 // *********
+//COMMENTS-SLIDER MAX-HEIGHT
 
 $( document ).ready(function(){
 function getMaxHeight() {
@@ -51,7 +52,7 @@ function getMaxHeight() {
   }
 return maxHeight
 }
-
+// AUTOSCROLL TO CATALOG SEECTION
 
 let mainBlockLink = document.querySelector(".intro__button");
 
@@ -68,6 +69,8 @@ mainBlockLink.addEventListener("click", function(evt) {
 
   return false;
 });
+
+//CATALOG TABS TOGGLING
 
 let tabs = document.querySelector(".catalog__tabs");
 let toggler = document.querySelector(".catalog__toggler");
@@ -110,7 +113,10 @@ tabs.onclick = function(evt) {
   }
 }
 
-                // ***Sliders***
+//INTERACTIVE TIMETABLE
+
+
+ //SLIDER
 
 var mySwiper = new Swiper ('.coaches__slider-wrapper', {
   direction: 'horizontal',
