@@ -150,16 +150,26 @@
     padding-bottom: 68px;
   }
 
+  .about-us__title {
+    padding-bottom: 5px;
+  }
+
   .about-us__text--additional {
     display: none;
   }
 
   .about-us__text-content span {
-    padding-bottom: 13px;
+    padding-bottom: 16px;
   }
 
   .about-us__image-wrapper {
     width: 100%;
+    height: 315px;
+  }
+
+  .about-us__image-wrapper img {
+    height: 100%;
+    object-fit: cover;
   }
 
   .about-us__text-content {

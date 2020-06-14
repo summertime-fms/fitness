@@ -69,9 +69,14 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .contacts {
     padding: 0;
-    padding-bottom: 47px;
+    padding-bottom: 46px;
 
     width: 100%;
+  }
+
+  .contacts__inner {
+    width: 84%;
+    padding-left: 0;
   }
 
   .contacts__wrapper h2 {
@@ -95,11 +100,6 @@
     font-size: 20px;
     line-height: 1.5;
   }
-
-  .contacts__group:last-of-type {
-    margin: 0;
-    padding-left: 85px;
-  }
 }
 
 @media (max-width: $mobile-maxWidth) {
@@ -115,7 +115,7 @@
   }
 
   .contacts__wrapper h2 {
-    padding-top: 80px;
+    padding-top: 68px;
     margin-bottom: 40px;
   }
 

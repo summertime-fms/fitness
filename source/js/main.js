@@ -131,7 +131,7 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
       slidesPerView: 1,
       spaceBetween: 10,
       slidesPerGroup: 1,
-      width:261
+      width:226
     },
     768: {
       slidesPerView: 2,

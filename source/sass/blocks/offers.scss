@@ -214,6 +214,10 @@
     padding-bottom: 64px;
   }
 
+  .offers__unlimited-text b {
+    padding-bottom: 9px;
+  }
+
   .offers__wrapper {
     @include container-mobile;
   }

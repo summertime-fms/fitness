@@ -77,12 +77,12 @@ input::placeholder {
     padding: 0;
     margin: 0;
     background-color: #102654;
-    padding-bottom: 30px;
+    padding-bottom: 36px;
   }
 
   .form__wrapper {
     @include container-tablet;
-    padding: 0 133px;
+    padding: 0 130px;
   }
 
   .form__button {
@@ -116,7 +116,7 @@ input::placeholder {
     background-color: #102654;
     padding: 0;
     margin: 0;
-    padding-bottom: 60px;
+    padding-bottom: 70px;
   }
 
   .form__wrapper {
@@ -129,6 +129,7 @@ input::placeholder {
 
   .form__button {
     width: 100%;
+    margin-top: 37px;
   }
 
   .form__wrapper h2 {
@@ -136,6 +137,6 @@ input::placeholder {
   }
 
   .form__fields input:not(:last-of-type) {
-    margin-bottom: 23px;
+    margin-bottom: 30px;
   }
 }

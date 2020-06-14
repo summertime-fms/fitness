@@ -277,8 +277,8 @@
 
 @media (max-width: $mobile-maxWidth) {
   .features {
-    padding-top: 69px;
-    padding-bottom: 20px;
+    padding-top: 73px;
+    padding-bottom: 30px;
   }
 
   .features h2 {
@@ -297,7 +297,7 @@
   .features__item-wrapper {
     padding: 0;
     width: 100%;
-    padding-bottom: 34px;
+    padding-bottom: 31px;
   }
 
   .features__container {
@@ -324,7 +324,6 @@
 
   .features__name {
     font-size: 20px;
-    padding-bottom: 2px;
     line-height: 1.7;
   }
 
@@ -340,20 +339,25 @@
     padding-bottom: 5px;
   }
 
-  .features__quantity--center {
-    font-size: 74px;
-    padding: 0;
-  }
-
 
   .features__item--center {
     padding-bottom: 44px;
-    padding-top: 36px;
+    padding-top: 26px;
 
     width: 100%;
   }
 
   .features__item--center .features__number {
     padding: 8px;
+  }
+
+  .features__quantity--center {
+    font-size: 74px;
+    padding: 0;
+  }
+
+  .features__item-wrapper--center {
+    padding-top: 10px;
+    padding-bottom: 40px;
   }
 }

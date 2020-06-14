@@ -20,7 +20,7 @@
 }
 
 @mixin container-mobile {
-  // min-width: $mobile-width;
+  min-width: $mobile-width;
   max-width: $mobile-maxWidth;
   padding-left: 15px;
   padding-right: 15px;
