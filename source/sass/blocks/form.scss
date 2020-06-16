@@ -80,6 +80,10 @@ input::placeholder {
     padding-bottom: 36px;
   }
 
+  .form__inner {
+    width: 100%;
+  }
+
   .form__wrapper {
     @include container-tablet;
     padding: 0 130px;
@@ -92,21 +96,24 @@ input::placeholder {
 
   .form__wrapper h2 {
     margin-bottom: 28px;
+    padding-top: 68px;
+    padding-left: 4px;
   }
 
   .form__fields {
     display: flex;
+    width: 94%;
     margin: 0;
   }
 
   .form__fields input {
-    min-width: 205px;
-    flex-grow: 1;
+    width: 43%;
+    min-width: unset;
     margin: 0;
   }
 
   .form__fields input:not(:last-of-type) {
-    margin-right: 30px;
+    margin-right: 60px;
   }
 }
 

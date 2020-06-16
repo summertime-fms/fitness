@@ -44,12 +44,15 @@
 }
 
 .promo__date-label:first-of-type {
-  padding-top: 10px;
+  padding-top: 0;
+  font-size: 18px;
+  line-height: 1.2;
 }
 
 .promo__date--day span {
   font-size: 15px;
-  line-height: 1.5;
+  line-height: 1.3;
+  padding-top: 5px;
 }
 
 .promo__details {
@@ -105,7 +108,7 @@
 }
 
 .promo__date--day {
-  padding-bottom: 3px;
+  padding-bottom: 16px;
   line-height: 1.3;
 }
 
@@ -138,6 +141,16 @@
     max-width: unset;
   }
 
+  .promo__date-label:first-of-type {
+    padding-top: 0;
+    font-size: 12px;
+    padding-bottom: 2px;
+  }
+
+  .promo__date--time .promo__date-label {
+    padding-bottom: 4px;
+  }
+
   .promo {
     padding-top: 100px;
   }
@@ -161,10 +174,6 @@
     padding: 49px 45px;
   }
 
-
-  .promo__date-label:first-of-type {
-    padding-top: 0;
-  }
 
   .promo__date--day span {
     font-size: 12px;
@@ -198,7 +207,7 @@
   }
 
   .promo__date--day {
-    padding-bottom: 1px;
+    padding-bottom: 3px;
     line-height: 1.2;
   }
 
@@ -215,7 +224,7 @@
 
 @media (max-width: $mobile-maxWidth) {
   .promo {
-    padding-top: 70px;
+    padding-top: 63px;
   }
 
   .promo__wrapper {
@@ -257,16 +266,17 @@
     padding-top: 0;
     font-size: 12px;
     line-height: 1;
+    padding-bottom: 5px;
   }
 
-  .promo-date--day > time > span {
+  .promo__date--day span {
     line-height: 1.3;
     font-size: 10px;
-    padding-top: 5px;
+    padding-top: 3px;
   }
 
   .promo__date--day {
-    padding-bottom: 8px;
+    padding-bottom: 5px;
   }
 
   .promo__date--time .promo__date-label {
@@ -310,6 +320,6 @@
 
   .promo__content p {
     font-size: 12px;
-    padding-bottom: 29px;
+    padding-bottom: 31px;
   }
 }

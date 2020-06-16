@@ -1,7 +1,7 @@
 
 .offers {
   padding-top: 120px;
-  padding-bottom: 120px;
+  padding-bottom: 117px;
 }
 
 .offers__wrapper {
@@ -211,11 +211,15 @@
 @media (max-width: $mobile-maxWidth) {
   .offers {
     padding-top: 67px;
-    padding-bottom: 64px;
+    padding-bottom: 67px;
   }
 
   .offers__unlimited-text b {
-    padding-bottom: 9px;
+    padding-bottom: 13px;
+  }
+
+  .offers__unlimited-text span {
+    line-height: 1.4;
   }
 
   .offers__wrapper {
@@ -223,7 +227,7 @@
   }
 
   .offers__item {
-    padding: 28px 42px 42px;
+    padding: 28px 20px 40px;
     text-align: center;
   }
 
@@ -270,7 +274,7 @@
   }
 
   .offers__unlimited-text p {
-    padding-bottom: 26px;
+    padding-bottom: 31px;
   }
 
   .offers__link {

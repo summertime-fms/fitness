@@ -126,7 +126,11 @@
 .catalog__item:hover {
   border: 8px solid transparent;
   border-image: linear-gradient(-225deg, rgb(184, 0, 39), #003d85) 30;
-  padding: 53px 37px;
+  padding: 53px 67px;
+}
+
+.catalog__tab {
+  text-align: center;
 }
 
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
@@ -157,8 +161,8 @@
   }
 
   .catalog__wrapper h2 {
-    padding-top: 102px;
-    padding-bottom: 31px;
+    padding-top: 100px;
+    padding-bottom: 30px;
     min-width: 768px;
   }
 
@@ -232,7 +236,7 @@
 
   .catalog__item {
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 33px;
     width: 290px;
   }
 
@@ -241,7 +245,7 @@
   }
 
   .catalog__wrapper {
-    padding-top: 71px;
+    padding-top: 70px;
   }
 
   .catalog__wrapper h2 {

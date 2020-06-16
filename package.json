@@ -53,6 +53,7 @@
     "node": "8.15"
   },
   "dependencies": {
+    "baron": "^3.0.3",
     "del": "^4.1.1",
     "swiper": "^5.4.2"
   }

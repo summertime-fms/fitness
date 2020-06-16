@@ -46,9 +46,15 @@
   height: 24px;
 }
 
+@media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
+  .socials__item:not(:last-of-type) {
+    padding-right: 21px;
+  }
+}
+
 @media (max-width: $mobile-maxWidth) {
   .socials {
-    padding-top: 15px;
+    padding-top: 11px;
   }
 
   .socials__link--vk {

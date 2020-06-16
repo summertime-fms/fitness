@@ -1,6 +1,6 @@
 .intro {
   letter-spacing: 0.03em;
-  padding-bottom: 55px;
+  padding-bottom: 50px;
 
   color: #ffffff;
 }
@@ -13,7 +13,7 @@
   z-index: -4;
   display: block;
   width: 100%;
-  height: 656px;
+  height: 660px;
   background: linear-gradient(#b80027  30%, #003d85 100%);
   background-image: url("../img/gradient.png");
 
@@ -76,9 +76,9 @@
 
 .intro__services-list {
   position: relative;
-  bottom: 94px;
-  right: 260px;
-
+  bottom: 92px;
+  right: 264px;
+  font-weight: lighter;
 
   @include list-default;
   font-size: 14px;
@@ -91,6 +91,7 @@
 
 .intro__service-item {
   line-height: 1.66;
+  letter-spacing: normal;
   text-align: right;
 }
 
@@ -106,7 +107,7 @@
 }
 
 .intro__socials-item:not(:last-of-type) {
-  margin-bottom: 21px;
+  margin-bottom: 18px;
 }
 
 .intro__socials-link:focus {
@@ -116,7 +117,7 @@
 
 .intro__button {
   margin-left: auto;
-  margin-top: -10px;
+  margin-top: -14px;
   width: 58%;
 }
 
@@ -134,6 +135,13 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .intro {
     padding-bottom: 35px;
+  }
+
+  .intro__service-item {
+    line-height: 1.57;
+    letter-spacing: normal;
+    text-align: right;
+    font-weight: 400;
   }
 
   .intro::before {
@@ -164,7 +172,7 @@
 
   .intro__button {
     width: 55%;
-    margin-top: -26px;
+    margin-top: -22px;
   }
 
 
@@ -179,8 +187,8 @@
   }
 
   .intro__services-list {
-    right: 205px;
-    bottom: 80px;
+    right: 212px;
+    bottom: 79px;
   }
 }
 
@@ -204,7 +212,7 @@
 
   .intro__button {
     width: 100%;
-    margin-top: -19px;
+    margin-top: -27px;
     padding-top: 22px;
   }
 
@@ -214,9 +222,11 @@
   }
 
   .intro__services-list {
-    bottom: 74px;
-    font-size: 13px;
+    bottom: 75px;
     right: 178px;
+    line-height: 21px;
+    font-weight: 500;
+    font-size: 14px;
   }
 
   .intro::before {

@@ -146,7 +146,7 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
       slidesPerGroup: 4,
       slidesPerView: 4,
       spaceBetween: 40,
-      width: 1040
+      width: 1160
 
     }
 
@@ -198,6 +198,6 @@ for (let i = 0; i < blocks.length; i++) {
       day.classList.remove('table__block--red-highlighted');
       target.classList.remove('table__block--highlighted');
     }
-}
 }}
-}
+
+}}

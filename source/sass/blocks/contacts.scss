@@ -22,7 +22,7 @@
 }
 
 .contacts__item {
-  margin-bottom: 20px;
+  margin-bottom: 17px;
 }
 
 .contacts__inner {
@@ -69,25 +69,29 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .contacts {
     padding: 0;
-    padding-bottom: 46px;
+    padding-bottom: 36px;
 
     width: 100%;
   }
 
   .contacts__inner {
-    width: 84%;
+    width: 83.6%;
     padding-left: 0;
   }
 
   .contacts__wrapper h2 {
     padding: 0;
     margin-bottom: 33px;
-    padding-top: 70px;
+    padding-top: 68px;
   }
 
   .contacts__wrapper {
     padding-right: 90px;
     padding-left: 133px;
+  }
+
+  .contacts__item {
+    margin-bottom: 24px;
   }
 
 
@@ -125,6 +129,7 @@
 
   .contacts__inner {
     flex-direction: column;
+    padding-left: 0;
   }
 
   .contacts__group:last-of-type {

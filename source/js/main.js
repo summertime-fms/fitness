@@ -30,9 +30,10 @@
 // *********
 //COMMENTS-SLIDER MAX-HEIGHT
 
-$( document ).ready(function(){
+$(document).ready(function() {
 function getMaxHeight() {
   let comments = document.getElementsByClassName('comments__slide');
+  if (comments) {
 
   let maxHeight = 0;
 
@@ -41,7 +42,6 @@ function getMaxHeight() {
 
         if (elemHeight > maxHeight) {
           maxHeight = elemHeight;
-
         }
       }
 
@@ -51,10 +51,12 @@ function getMaxHeight() {
     return height;
   }
 return maxHeight
-}
+}}
+
 // AUTOSCROLL TO CATALOG SEECTION
 
 let mainBlockLink = document.querySelector('.intro__button');
+if (mainBlockLink){
 
 mainBlockLink.addEventListener('click', function(evt) {
   evt.preventDefault();
@@ -68,13 +70,13 @@ mainBlockLink.addEventListener('click', function(evt) {
   });
 
   return false;
-});
+})};
 
 //CATALOG TABS TOGGLING
 
 let tabs = document.querySelector('.catalog__tabs');
 let toggler = document.querySelector('.catalog__toggler');
-
+ if (tabs) {
 tabs.onclick = function(evt) {
   evt.preventDefault();
 
@@ -111,7 +113,7 @@ tabs.onclick = function(evt) {
     itemGroups[1].style.display = 'none';
     itemGroups[2].style.display ='flex';
   }
-}
+}}
 
 //SLIDER
 
@@ -144,7 +146,7 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
       slidesPerGroup: 4,
       slidesPerView: 4,
       spaceBetween: 40,
-      width: 1040
+      width: 1160
 
     }
 
@@ -166,14 +168,14 @@ var mySwiper1 = new Swiper('.comments__slider', {
   spaceBetween: 0,
 
 });
-});
-
+})
 // INTERRACTIVE TIMETABLE
 
 let table = document.querySelector('.table');
 let blocks = table.querySelectorAll('.table__block');
 let daysRow = document.querySelector('.table__row--days');
 
+if(table) {
 
 for (let i = 0; i < blocks.length; i++) {
   blocks[i].onmouseover = function(evt) {
@@ -193,8 +195,9 @@ for (let i = 0; i < blocks.length; i++) {
 
     blocks[i].onmouseout = function() {
       time.classList.remove('table__block--red-highlighted');
-      day.cclassList.remove('table__block--red-highlighted');
+      day.classList.remove('table__block--red-highlighted');
       target.classList.remove('table__block--highlighted');
     }
-}
+}}
+
 }}

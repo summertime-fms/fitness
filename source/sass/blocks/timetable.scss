@@ -28,4 +28,20 @@
   .timetable__table-wrapper {
     overflow-x: scroll;
   }
+
+  .timetable__wrapper-for-scrolling::-webkit-scrollbar {
+
+    width: 0;
+  }
+
+  .timetable__scroller-bar {
+    position: absolute;
+    z-index: 1;
+    width: 6px;
+    border-radius: 3px;
+    background: #333333;
+    opacity: 0;
+    transition: 0.1s opacity 0.4s linear;
+    pointer-events: auto;
+  }
 }

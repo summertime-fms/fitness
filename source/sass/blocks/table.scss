@@ -51,7 +51,9 @@
     min-width: 146px;
   }
 
-  .table__block--time {
+  .table__block:first-of-type {
     min-width: 62px;
+    position: sticky;
+    left: 0;
   }
 }
