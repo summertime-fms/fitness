@@ -22,8 +22,9 @@
   background-position: center;
   min-height: 228px;
   margin-top: -116px;
-  margin-left: 3%;
+
   top: 521px;
+  left: 38%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video@2x.jpg");
@@ -42,6 +43,7 @@
   background-size: 100px 100px;
   height: 229px;
   width: 100%;
+
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/play-button@2x.png");
@@ -160,6 +162,7 @@
     padding: 0;
     padding-top: 20px;
     padding-bottom: 68px;
+    margin-bottom: 0;
   }
 
   .about-us__title {

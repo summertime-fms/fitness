@@ -209,7 +209,7 @@ if (table) {
 
 
   for (let i = 0; i < cells.length; i++) {
-  cells[i].classList.add('table__block--hide')
+    cells[i].classList.add('table__block--hide')
   }
 
   let currentDayIndex = getIndex(currentDay);
@@ -253,7 +253,6 @@ if (table) {
     days[i].addEventListener('click', function () {
       daysRow.classList.remove('table__block--bordered');
       for (let j = 0; j < days.length; j++) {
-        // days[i].style.borderTop = 'none';
 
         if (days[j].classList.contains('table__block--current')) {
             days[j].classList.remove('table__block--current')

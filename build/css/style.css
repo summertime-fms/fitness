@@ -438,8 +438,8 @@ button {
   background-position: center;
   min-height: 228px;
   margin-top: -116px;
-  margin-left: 3%;
-  top: 521px; }
+  top: 521px;
+  left: 38%; }
   @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
     .about-us__video-link {
       background-image: url("../img/video@2x.jpg");
@@ -553,7 +553,8 @@ button {
   .about-us {
     padding: 0;
     padding-top: 20px;
-    padding-bottom: 68px; }
+    padding-bottom: 68px;
+    margin-bottom: 0; }
   .about-us__title {
     padding-bottom: 5px; }
   .about-us__text--additional {
@@ -1982,7 +1983,8 @@ button {
     margin: 0 auto;
     min-height: 274px; }
   .coaches__slider-inner {
-    padding: 0 17px; }
+    padding: 0 17px;
+    max-width: 350px; }
   .coaches__button-next {
     right: -14px; }
   .coaches__button-prev {
@@ -2578,7 +2580,7 @@ button {
   .offers__item:not(:last-of-type) {
     margin-bottom: 30px; }
   .offers__item p {
-    margin-bottom: 25px; }
+    margin-bottom: 11px; }
   .offers__inner {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2729,7 +2731,7 @@ button {
     padding-right: 15px;
     margin: 0 auto; }
   .comments {
-    padding-bottom: 64px; }
+    padding-bottom: 70px; }
   .comments__slide {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -2738,7 +2740,8 @@ button {
     padding: 40px 25px;
     -webkit-box-align: center;
         -ms-flex-align: center;
-            align-items: center; }
+            align-items: center;
+    padding-bottom: 33px; }
   .comments h2 {
     padding-bottom: 45px; }
   .comments__button-next {
@@ -2965,7 +2968,7 @@ input::placeholder {
     background-color: #102654;
     padding: 0;
     margin: 0;
-    padding-bottom: 70px; }
+    padding-bottom: 67px; }
   .form__wrapper {
     min-width: 320px;
     max-width: 767px;
@@ -3202,7 +3205,8 @@ input::placeholder {
     font-size: 16px;
     line-height: 19px;
     display: -ms-grid;
-    display: grid; }
+    display: grid;
+    padding-bottom: 54px; }
   .page-footer__wrapper {
     min-width: 320px;
     max-width: 767px;
