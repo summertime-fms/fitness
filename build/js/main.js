@@ -7,12 +7,11 @@
       Element.prototype.webkitMatchesSelector ||
       Element.prototype.mozMatchesSelector ||
       Element.prototype.msMatchesSelector;
-
   }
 
 })();
-(function() {
 
+(function() {
 
   if (!Element.prototype.closest) {
     Element.prototype.closest = function(css) {
@@ -50,7 +49,9 @@ function getMaxHeight() {
     let height = parseInt(styles.height);
     return height;
   }
+
 return maxHeight
+
 }}
 
 // AUTOSCROLL TO CATALOG SEECTION
@@ -58,15 +59,15 @@ return maxHeight
 let mainBlockLink = document.querySelector('.intro__button');
 if (mainBlockLink){
 
-mainBlockLink.addEventListener('click', function(evt) {
+  mainBlockLink.addEventListener('click', function(evt) {
   evt.preventDefault();
   let href = $(this).attr('href');
 
   $('html, body').animate({
-      scrollTop: $(href).offset().top
+    scrollTop: $(href).offset().top
   }, {
-      duration: 370,
-      easing: 'swing'
+    duration: 370,
+    easing: 'swing'
   });
 
   return false;
@@ -77,42 +78,46 @@ mainBlockLink.addEventListener('click', function(evt) {
 let tabs = document.querySelector('.catalog__tabs');
 let toggler = document.querySelector('.catalog__toggler');
  if (tabs) {
-tabs.onclick = function(evt) {
-  evt.preventDefault();
 
-  let itemGroups = document.getElementsByClassName('catalog__items-group')
-  let target = event.target.closest('li');
-  if (!target) return;
+    tabs.onclick = function(evt) {
 
-  let tabsClientRect = this.getBoundingClientRect();
-  let tabsBorderLeft = tabsClientRect.left;
-  let tabClientRect = target.getBoundingClientRect();
-  let tabWidth = tabClientRect.width + 'px';
+      evt.preventDefault();
 
-  let targetClientRect = target.getBoundingClientRect();
-  let leftBorder = targetClientRect.left;
-  let x = leftBorder - tabsBorderLeft + 'px';
+      let itemGroups = document.getElementsByClassName('catalog__items-group')
+      let target = event.target.closest('li');
+      if (!target) return;
 
-  toggler.style.left = x;
-  toggler.style.transition = 'left 0.1s ease-in';
+    let tabsClientRect = this.getBoundingClientRect();
+    let tabsBorderLeft = tabsClientRect.left;
+    let tabClientRect = target.getBoundingClientRect();
+    let tabWidth = tabClientRect.width + 'px';
 
-  toggler.style.width = tabWidth;
+    let targetClientRect = target.getBoundingClientRect();
+    let leftBorder = targetClientRect.left;
+    let x = leftBorder - tabsBorderLeft + 'px';
 
-  if (target.classList.contains('catalog__tab--second')) {
-    itemGroups[0].style.display = 'none';
-    itemGroups[1].style.display = 'flex';
-    itemGroups[2].style.display = 'none';
-  }
-  if (target.classList.contains('catalog__tab--first')) {
-    itemGroups[0].style.display = 'flex';
-    itemGroups[1].style.display = 'none';
-    itemGroups[2].style.display = 'none';
-  }
-  if (target.classList.contains('catalog__tab--third')) {
-    itemGroups[0].style.display = 'none';
-    itemGroups[1].style.display = 'none';
-    itemGroups[2].style.display ='flex';
-  }
+    toggler.style.left = x;
+    toggler.style.transition = 'left 0.1s ease-in';
+
+    toggler.style.width = tabWidth;
+
+    if (target.classList.contains('catalog__tab--second')) {
+      itemGroups[0].style.display = 'none';
+      itemGroups[1].style.display = 'flex';
+      itemGroups[2].style.display = 'none';
+    }
+
+    if (target.classList.contains('catalog__tab--first')) {
+      itemGroups[0].style.display = 'flex';
+      itemGroups[1].style.display = 'none';
+      itemGroups[2].style.display = 'none';
+    }
+
+    if (target.classList.contains('catalog__tab--third')) {
+      itemGroups[0].style.display = 'none';
+      itemGroups[1].style.display = 'none';
+      itemGroups[2].style.display ='flex';
+    }
 }}
 
 //SLIDER
@@ -124,33 +129,23 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
     nextEl: '.coaches__button-next',
     prevEl: '.coaches__button-prev',
   },
-
   spaceBetween: 40,
-
-
   breakpoints: {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
       slidesPerGroup: 1
-
     },
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
       spaceBetween: 30
-
-
     },
     1200: {
       slidesPerGroup: 4,
       slidesPerView: 4,
       spaceBetween: 40
-
-
     }
-
-
   }
 })
 
@@ -164,22 +159,26 @@ var mySwiper1 = new Swiper('.comments__slider', {
   },
   slidesPerView: 1,
   slidesPerGroup: 1,
-
   spaceBetween: 0,
-
 });
-})
+
 // INTERRACTIVE TIMETABLE
 
 let table = document.querySelector('.table');
 
 if (table) {
+
+  $(".timetable__table").niceScroll(".timetable__table-wrapper",{cursorcolor:"aquamarine"});
+
   let blocks = table.querySelectorAll('.table__block');
   let rows = document.querySelectorAll('.table__row');
   let days = document.querySelectorAll('.table__block--day')
   let tableBody = table.querySelector('.table__body');
   let cells = tableBody.querySelectorAll('.table__block--exercise');
   let currentDay = table.querySelector('.table__block--current');
+  let timelines = tableBody.querySelectorAll('.table__block--time');
+
+
 
   function getIndex(element) {
     let index;
@@ -252,14 +251,15 @@ if (table) {
   for (let i = 0; i < days.length; i++) {
     days[i].addEventListener('click', function () {
       for (let j = 0; j < days.length; j++) {
-        days[i].style.borderBottom = '';
+        days[i].style.borderTop = '';
+
         if (days[j].classList.contains('table__block--current')) {
             days[j].classList.remove('table__block--current')
-          }}
+          }
         if (!days[i].classList.contains('table__block--current')) {
           days[i].classList.add('table__block--current')
           }
-
+          tableBody.style.top = '0'
       let index = getIndex(days[i])
       for (let h = 0; h < cells.length; h++) {
         if (!cells[h].classList.contains('table__block--hide')) {
@@ -273,7 +273,12 @@ if (table) {
             }
           }
           button.classList.remove('timetable__button--opened')
-    })
+    }
+    tableBody.style.top = '0'
+    for (let p = 0; p < timelines.length; p++) {
+      timelines[p].classList.remove('table__block--disabled');
+    }
+  })
 
     }
 
@@ -281,36 +286,48 @@ if (table) {
     button.classList.toggle('timetable__button--opened');
 
       if (button.classList.contains('timetable__button--opened')) {
+        for (let p = 0; p < timelines.length; p++) {
+          timelines[p].classList.add('table__block--disabled');
+        }
         for (let i = 0; i < days.length; i++) {
           days[i].classList.remove('table__block--hide')
 
           if (days[i].classList.contains('table__block--current')) {
-            days[i].style.borderBottom = 'none';
+            days[i].style.borderTop = ' 2px solid #1c3374;';
           }
           }
 
           for (let j = 0; j < cells.length; j++) {
             cells[j].classList.add('table__block--hide');
           }
+          tableBody.style.top = '-340px'
 
       } else {
+        for (let p = 0; p < timelines.length; p++) {
+          timelines[p].classList.remove('table__block--disabled');
+        }
+
           for (let j = 0; j < days.length; j++) {
             if (!days[j].classList.contains('table__block--current')) {
               days[j].classList.add('table__block--hide')
             }
 
-
             else {
-              days[j].style.borderBottom = '2px solid #1c3374';
+
+              days[j].style.borderTop = '2px solid #1c3374';
+
               let dayIndex = getIndex(days[j]);
+
               for (let h = 0; h < cells.length; h++) {
-              let cellIndex = getIndex(cells[h]);
-              if (!dayIndex == cellIndex) {
-                cells[h].classList.add('table__block--hide')
-              } else {
-              cells[j].classList.remove('table__block--hide');
-              }
+                let cellIndex = getIndex(cells[h]);
+                  if (dayIndex == cellIndex) {
+                    cells[h].classList.remove('table__block--hide')
+                  } else {
+                  cells[h].classList.add('table__block--hide');
+                  }
+               }
           }
-        }}}
+          tableBody.style.top = '0'
+      }}
   })
-}
+}})
