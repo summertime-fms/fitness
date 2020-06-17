@@ -109,7 +109,9 @@
   width: 100%;
   height: auto;
   border: 8px solid transparent;
-  border-image: linear-gradient(-225deg, #b80027, #003d85) 30;
+
+  border-image-source: linear-gradient(-225deg, #b80027 30%, #003d85 100%);
+  border-image-slice: 1;
   display: flex;
   flex-direction: column;
   flex-basis: 0;
@@ -227,6 +229,12 @@
     line-height: 1.4;
   }
 
+  .offers__items-group {
+
+    flex-basis: auto;
+    display: -webkit-flex;
+  }
+
   .offers__wrapper {
     @include container-mobile;
   }
@@ -234,6 +242,8 @@
   .offers__item {
     padding: 28px 20px 40px;
     text-align: center;
+    flex-basis: auto;
+    display: -webkit-flex;
   }
 
   .offers__item:not(:last-of-type) {
@@ -252,6 +262,8 @@
 
   .offers__unlimited {
     flex-direction: column;
+    flex-basis: auto;
+    display: -webkit-flex;
     margin: 0;
     width: 100%;
     margin-bottom: 27px;

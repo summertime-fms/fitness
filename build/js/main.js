@@ -161,7 +161,7 @@ var mySwiper1 = new Swiper('.comments__slider', {
   slidesPerGroup: 1,
   spaceBetween: 0,
 });
-
+})
 // INTERRACTIVE TIMETABLE
 
 let table = document.querySelector('.table');
@@ -330,4 +330,4 @@ if (table) {
           tableBody.style.top = '0'
       }}
   })
-}})
+}
