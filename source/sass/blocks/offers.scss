@@ -108,8 +108,8 @@
   padding: 17px 28px;
   width: 100%;
   height: auto;
-  border: 8px solid transparent;
-
+  border: 8px solid;
+  -webkit-border-image: -webkit-linear-gradient(-225deg, #b80027 30%, #003d85 100%);
   border-image-source: linear-gradient(-225deg, #b80027 30%, #003d85 100%);
   border-image-slice: 1;
   display: flex;

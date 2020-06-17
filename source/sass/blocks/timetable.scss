@@ -5,6 +5,8 @@
 
 .timetable__wrapper {
   @include container-desktop;
+  padding-left: 15px;
+  padding-right: 12px;
 }
 
 .timetable__button {
@@ -25,6 +27,17 @@
 @media (min-width: $tablet-width) and (max-width: $tablet-maxWidth) {
   .timetable__wrapper {
     @include container-tablet;
+    padding-left: 112px;
+    padding-right: 37px;
+  }
+
+  .timetable {
+    padding-top: 79px;
+  }
+
+  .timetable__wrapper h1 {
+    margin-bottom: 33px;
+    margin-right: 78px;
   }
 
   .timetable__table {
@@ -33,6 +46,15 @@
 
   .timetable__table-wrapper {
     overflow-x: scroll;
+  }
+
+  ::-webkit-scrollbar {
+    height: 4px;
+    background-color: #feebef;
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background-color: #ed0233;
   }
 }
 
@@ -43,7 +65,7 @@
   }
 
   .timetable__table-wrapper {
-    overflow-x: scroll;
+
     position: relative;
   }
 
@@ -64,6 +86,10 @@
 
   .timetable__button--opened {
     background-image: url("../img/icon-arrow-mobile-opened.svg");
+  }
+
+  .timetable {
+    padding-top: 69px;
   }
 }
 

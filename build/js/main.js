@@ -168,11 +168,12 @@ let table = document.querySelector('.table');
 
 if (table) {
 
-  $(".timetable__table").niceScroll(".timetable__table-wrapper",{cursorcolor:"aquamarine"});
+  // $(".timetable__table").niceScroll(".timetable__table-wrapper",{cursorcolor:"aquamarine"});
 
   let blocks = table.querySelectorAll('.table__block');
   let rows = document.querySelectorAll('.table__row');
-  let days = document.querySelectorAll('.table__block--day')
+  let daysRow = table.querySelector('.table__row--days');
+  let days = daysRow.querySelectorAll('.table__block--day')
   let tableBody = table.querySelector('.table__body');
   let cells = tableBody.querySelectorAll('.table__block--exercise');
   let currentDay = table.querySelector('.table__block--current');
@@ -250,8 +251,9 @@ if (table) {
 
   for (let i = 0; i < days.length; i++) {
     days[i].addEventListener('click', function () {
+      daysRow.classList.remove('table__block--bordered');
       for (let j = 0; j < days.length; j++) {
-        days[i].style.borderTop = '';
+        // days[i].style.borderTop = 'none';
 
         if (days[j].classList.contains('table__block--current')) {
             days[j].classList.remove('table__block--current')
@@ -286,20 +288,25 @@ if (table) {
     button.classList.toggle('timetable__button--opened');
 
       if (button.classList.contains('timetable__button--opened')) {
+        daysRow.classList.add('table__block--bordered');
         for (let p = 0; p < timelines.length; p++) {
           timelines[p].classList.add('table__block--disabled');
         }
         for (let i = 0; i < days.length; i++) {
           days[i].classList.remove('table__block--hide')
+          days[i].classList.remove('table__block--current')
+          // days[i].style.borderTop = "";
 
           if (days[i].classList.contains('table__block--current')) {
-            days[i].style.borderTop = ' 2px solid #1c3374;';
-          }
+            days[i].classList.remove('.table__block--bordered');
+            }
           }
 
           for (let j = 0; j < cells.length; j++) {
             cells[j].classList.add('table__block--hide');
           }
+
+
           tableBody.style.top = '-340px'
 
       } else {

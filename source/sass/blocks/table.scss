@@ -44,7 +44,7 @@
 }
 
 .table__block--transparent {
-  background-color: transparent;
+  background-color: #ffffff;
   border: none;
   width: 65px;
 }
@@ -74,10 +74,24 @@
     min-width: 146px;
   }
 
+
+  .table {
+    margin-left: -13px;
+    margin-bottom: -5px;
+    overflow: hidden;
+  }
+
   .table__block:first-of-type {
     min-width: 62px;
-    position: sticky;
-    left: 0;
+    position: absolute;
+    left: 43px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
+  .table__block--exercise {
+    height: 108px;
   }
 }
 
@@ -90,10 +104,13 @@
     z-index: 5;
     position: relative;
     display: flex;
+    margin-bottom: -14px;
   }
 
   .table {
     margin-left: 0;
+    display: block;
+    font-size: 16px;
   }
 
   .table__body {
@@ -109,13 +126,6 @@
     justify-content: center;
     margin-bottom: 8px;
   }
-
-  .table {
-    overflow-x: scroll;
-    display: block;
-  }
-
-
 
   .table__row--days {
     flex-direction: column;
@@ -172,6 +182,14 @@
 
   .table__block--disabled {
     opacity: 0.2;
+  }
+
+  .table__block--bordered {
+    border-top: 2px solid #1c3374;
+  }
+
+  .table__block--red-highlighted {
+    border-top: none;
   }
 }
 
