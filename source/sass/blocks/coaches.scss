@@ -127,6 +127,10 @@
     padding-bottom: 40px;
   }
 
+  .coaches__slide img {
+    height: 100%;
+  }
+
   .coaches__wrapper {
     @include container-tablet;
     min-width: 576px;
@@ -135,8 +139,9 @@
   }
 
   .coaches__slider-inner {
-    height: 294px;
+    height: auto;
     width: 100%;
+    max-width: 700px;
   }
 
   .coaches__slide-button--next {
@@ -145,10 +150,6 @@
 
   .coaches__slide-button--prev {
     left: 0;
-  }
-
-  .coaches__slider-wrapper {
-    height: 100%;
   }
 
   .coaches__features {

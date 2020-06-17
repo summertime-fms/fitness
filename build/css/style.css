@@ -1940,6 +1940,8 @@ button {
         -ms-grid-row-align: center;
         align-self: center;
     padding-bottom: 40px; }
+  .coaches__slide img {
+    height: 100%; }
   .coaches__wrapper {
     min-width: 768px;
     padding-left: 45px;
@@ -1949,14 +1951,13 @@ button {
     padding-left: 101px;
     padding-right: 101px; }
   .coaches__slider-inner {
-    height: 294px;
-    width: 100%; }
+    height: auto;
+    width: 100%;
+    max-width: 700px; }
   .coaches__slide-button--next {
     right: 0; }
   .coaches__slide-button--prev {
     left: 0; }
-  .coaches__slider-wrapper {
-    height: 100%; }
   .coaches__features {
     padding-right: 15px; } }
 
