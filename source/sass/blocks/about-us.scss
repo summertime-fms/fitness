@@ -1,15 +1,19 @@
 .about-us {
   padding-bottom: 120px;
+  position: relative;
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   padding-top: 120px;
 
+
   @include container-desktop;
+  margin-bottom: 110px;
 }
 
 .about-us__video-link {
   display: block;
+  position: absolute;
   width: 364px;
   z-index: 3;
 
@@ -18,7 +22,8 @@
   background-position: center;
   min-height: 228px;
   margin-top: -116px;
-  margin-left: 7%;
+  margin-left: 3%;
+  top: 521px;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background-image: url("../img/video@2x.jpg");
@@ -35,7 +40,7 @@
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100px 100px;
-  height: 100%;
+  height: 229px;
   width: 100%;
 
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
@@ -86,10 +91,11 @@
   .about-us {
     @include container-tablet;
 
-    padding-bottom: 98px;
+    margin-bottom: 62px;
     padding-top: 45px;
     flex-direction: column;
     align-items: center;
+    padding-bottom: 36px;
   }
 
   .about-us__title {
@@ -141,6 +147,7 @@
     min-height: 167px;
     margin-top: -83px;
     margin-left: 0;
+    position: unset;
 
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background-size: 267px auto;
@@ -196,6 +203,7 @@
   .about-us__video-link {
     background-image: url("../img/video-mobile.png");
     margin: 0;
+    position: unset;
     margin-top: 37px;
     height: 50vw;
     background-size: cover;
@@ -216,5 +224,6 @@
 
   .about-us__video-link::after {
     background-size: 73px 73px;
+    height: 100%;
   }
 }

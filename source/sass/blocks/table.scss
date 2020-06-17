@@ -6,42 +6,60 @@
   text-align: center;
   border-spacing: 8px;
   user-select: none;
+  display: table;
+  flex-direction: column;
+}
+
+.table__head {
+  display: table-row-group;
+}
+
+.table__body {
+  display: table-row-group;
 }
 
 .table__block {
   background-color: #f8f9fc;
   cursor: pointer;
-}
-
-.table__block:not(:first-of-type) {
-  width: 149px;
+  // margin-right: 8px;
+  // margin-bottom: 8px;
+  display: table-cell;
+  vertical-align: middle;
 }
 
 .table__block--day {
   border: 2px solid #1c3374;
   background-color: #ffffff;
   height: 66px;
+  width: 148px;
 }
 
-.table__row--days td:first-of-type {
+.table__row {
+  display: table-row;
+}
+
+.table__block--transparent {
   background-color: transparent;
   border: none;
+  width: 65px;
 }
 
 .table__block--time {
   border: 2px solid #1c3374;
   background-color: #ffffff;
   height: 110px;
+  width: 65px;
+  flex-grow: 0 ;
 }
 
 .table__block--highlighted {
   background-color: #ffffff;
-  border: 2px solid #ed0233;
+  outline: 2px solid #ed0233;
   color: #ed0233;
 }
 
 .table__block--red-highlighted {
-  border: none;
+  border-color: #ed0233;
   color: #ffffff;
   background-color: #ed0233;
 }
@@ -57,3 +75,90 @@
     left: 0;
   }
 }
+
+@media (max-width: $mobile-maxWidth) {
+  .table__row {
+    display: flex;
+  }
+
+  .table__head {
+
+    display: flex;
+  }
+
+  .table__body {
+    display: block;
+    width: 100%;
+  }
+
+  .table__block {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 8px;
+  }
+
+  .table {
+    overflow-x: scroll;
+    display: block;
+  }
+
+
+
+  .table__row--days {
+    flex-direction: column;
+    display: flex;
+    flex-grow: 1;
+  }
+
+  .table__block--time {
+    width: 60px;
+    height: 80px;
+    margin-bottom: 8px;
+    margin-right: 8px;
+  }
+
+  .table__block--transparent {
+    display: none;
+  }
+
+  .table__block--exercise {
+    width: calc(100% - 70px);
+  }
+
+
+  .table__block--day {
+    width: 100%;
+    height: 60px;
+    margin: 0;
+    border-bottom: none;
+  }
+
+  .table__block--day:last-of-type {
+    border-bottom: 2px solid #1c3374;
+  }
+
+  .table__block--current {
+    border-bottom: 2px solid #1c3374;
+  }
+
+  .table__block--day:first-of-type {
+    display: block;
+  }
+
+
+  .table__block--hide {
+    display: none;
+  }
+
+  .table__head::before {
+    content: "";
+    display: block;
+
+    width: 60px;
+    height: 80px;
+    margin-right: 8px;
+    flex-grow: 0;
+  }
+}
+

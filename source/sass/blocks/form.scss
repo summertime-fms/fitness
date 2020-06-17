@@ -25,6 +25,10 @@
   background-color: transparent;
   min-height: 30px;
   border-bottom: 1px solid #74819c;
+
+  appearance: none;
+
+  border-radius: 0;
 }
 
 input::placeholder {
@@ -107,13 +111,13 @@ input::placeholder {
   }
 
   .form__fields input {
-    width: 43%;
+    width: 44%;
     min-width: unset;
     margin: 0;
   }
 
   .form__fields input:not(:last-of-type) {
-    margin-right: 60px;
+    margin-right: 12%;
   }
 }
 

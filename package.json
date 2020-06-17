@@ -55,6 +55,7 @@
   "dependencies": {
     "baron": "^3.0.3",
     "del": "^4.1.1",
+    "jquery.nicescroll": "^3.7.6",
     "swiper": "^5.4.2"
   }
 }

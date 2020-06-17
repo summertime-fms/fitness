@@ -7,6 +7,12 @@
   @include container-desktop;
 }
 
+.timetable__button {
+  border: none;
+  display: none;
+  background: none;
+}
+
 .timetable__wrapper h1 {
   text-align: center;
   margin-bottom: 62px;
@@ -28,20 +34,36 @@
   .timetable__table-wrapper {
     overflow-x: scroll;
   }
+}
 
-  .timetable__wrapper-for-scrolling::-webkit-scrollbar {
-
-    width: 0;
+@media (max-width: $mobile-maxWidth) {
+  .timetable__wrapper {
+    padding-left: 15px;
+    padding-right: 15px;
   }
 
-  .timetable__scroller-bar {
-    position: absolute;
-    z-index: 1;
-    width: 6px;
-    border-radius: 3px;
-    background: #333333;
-    opacity: 0;
-    transition: 0.1s opacity 0.4s linear;
-    pointer-events: auto;
+  .timetable__table-wrapper {
+    overflow-x: scroll;
+    position: relative;
+  }
+
+  .timetable__button {
+    display: block;
+    width: 51px;
+    height: 60px;
+    right: 0;
+    top: 18px;
+    background-image: url("../img/icon-arrow-mobile.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    border-bottom: 2px solid #1c3374;
+    border-right: 2px solid #1c3374;
+    border-top: 2px solid #1c3374;
+    cursor: pointer;
+  }
+
+  .timetable__button--opened {
+    background-image: url("../img/icon-arrow-mobile-opened.svg");
   }
 }
+

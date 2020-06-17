@@ -132,21 +132,21 @@ var mySwiper = new Swiper ('.coaches__slider-wrapper', {
     320: {
       slidesPerView: 1,
       spaceBetween: 10,
-      slidesPerGroup: 1,
-      width:226
+      slidesPerGroup: 1
+
     },
     768: {
       slidesPerView: 2,
       slidesPerGroup: 2,
-      spaceBetween: 30,
-      width: 566
+      spaceBetween: 30
+
 
     },
     1200: {
       slidesPerGroup: 4,
       slidesPerView: 4,
-      spaceBetween: 40,
-      width: 1160
+      spaceBetween: 40
+
 
     }
 
@@ -172,32 +172,145 @@ var mySwiper1 = new Swiper('.comments__slider', {
 // INTERRACTIVE TIMETABLE
 
 let table = document.querySelector('.table');
-let blocks = table.querySelectorAll('.table__block');
-let daysRow = document.querySelector('.table__row--days');
 
-if(table) {
+if (table) {
+  let blocks = table.querySelectorAll('.table__block');
+  let rows = document.querySelectorAll('.table__row');
+  let days = document.querySelectorAll('.table__block--day')
+  let tableBody = table.querySelector('.table__body');
+  let cells = tableBody.querySelectorAll('.table__block--exercise');
+  let currentDay = table.querySelector('.table__block--current');
 
-for (let i = 0; i < blocks.length; i++) {
-  blocks[i].onmouseover = function(evt) {
+  function getIndex(element) {
+    let index;
+    for (let i = 0; i < rows.length; i++) {
+      let  cells = rows[i].querySelectorAll('.table__block');
+
+      for (let j = 0; j < cells.length; j++) {
+
+        if (element == cells[j]) {
+          index = j - 1;
+
+          return index;
+          break
+        }
+      }
+    }
+  }
+
+  function showCells(index) {
+  for (let l = 0; l < cells.length; l++) {
+    let cellIndex = getIndex(cells[l]);
+    if (cellIndex === index) {
+      cells[l].classList.remove('table__block--hide')
+    }
+  }
+  }
+
+
+  for (let i = 0; i < cells.length; i++) {
+  cells[i].classList.add('table__block--hide')
+  }
+
+  let currentDayIndex = getIndex(currentDay);
+  showCells(currentDayIndex)
+  for (let v = 0; v < days.length; v++) {
+    if (!days[v].classList.contains('table__block--current')) {
+      days[v].classList.add('table__block--hide');
+    }
+  }
+  for (let f = 0; f < blocks.length; f++) {
+
+  blocks[f].onmouseover = function(evt) {
 
     let target = evt.target;
 
+    let day;
+
     if (!target.classList.contains('table__block--day') && !target.classList.contains('table__block--transparent') &&  !target.classList.contains('table__block--time')) {
 
-    let parent = target.parentNode;
-    let index = target.cellIndex;
-    let day = daysRow.cells[index];
-    let time = parent.firstElementChild;
+      let index = getIndex(target);
+      day = days[index];
 
-    target.classList.add('table__block--highlighted');
-    time.classList.add('table__block--red-highlighted');
-    day.classList.add('table__block--red-highlighted');
+      day.classList.add('table__block--red-highlighted')
 
-    blocks[i].onmouseout = function() {
-      time.classList.remove('table__block--red-highlighted');
-      day.classList.remove('table__block--red-highlighted');
-      target.classList.remove('table__block--highlighted');
+      let parent = target.parentNode;
+      let time = parent.firstElementChild;
+
+      target.classList.add('table__block--highlighted')
+      time.classList.add('table__block--red-highlighted')
+
+      target.onmouseout = function() {
+        target.classList.remove('table__block--highlighted')
+        time.classList.remove('table__block--red-highlighted')
+        day.classList.remove('table__block--red-highlighted');
     }
-}}
+  }}
+  }
+  let button = document.querySelector('.timetable__button');
 
-}}
+  for (let i = 0; i < days.length; i++) {
+    days[i].addEventListener('click', function () {
+      for (let j = 0; j < days.length; j++) {
+        days[i].style.borderBottom = '';
+        if (days[j].classList.contains('table__block--current')) {
+            days[j].classList.remove('table__block--current')
+          }}
+        if (!days[i].classList.contains('table__block--current')) {
+          days[i].classList.add('table__block--current')
+          }
+
+      let index = getIndex(days[i])
+      for (let h = 0; h < cells.length; h++) {
+        if (!cells[h].classList.contains('table__block--hide')) {
+          cells[h].classList.add('table__block--hide')
+          }
+        }
+        showCells(index);
+        for (let j = 0; j < days.length; j++) {
+          if (!days[j].classList.contains('table__block--current')) {
+            days[j].classList.add('table__block--hide')
+            }
+          }
+          button.classList.remove('timetable__button--opened')
+    })
+
+    }
+
+  button.addEventListener('click', function() {
+    button.classList.toggle('timetable__button--opened');
+
+      if (button.classList.contains('timetable__button--opened')) {
+        for (let i = 0; i < days.length; i++) {
+          days[i].classList.remove('table__block--hide')
+
+          if (days[i].classList.contains('table__block--current')) {
+            days[i].style.borderBottom = 'none';
+          }
+          }
+
+          for (let j = 0; j < cells.length; j++) {
+            cells[j].classList.add('table__block--hide');
+          }
+
+      } else {
+          for (let j = 0; j < days.length; j++) {
+            if (!days[j].classList.contains('table__block--current')) {
+              days[j].classList.add('table__block--hide')
+            }
+
+
+            else {
+              days[j].style.borderBottom = '2px solid #1c3374';
+              let dayIndex = getIndex(days[j]);
+              for (let h = 0; h < cells.length; h++) {
+              let cellIndex = getIndex(cells[h]);
+              if (!dayIndex == cellIndex) {
+                cells[h].classList.add('table__block--hide')
+              } else {
+              cells[j].classList.remove('table__block--hide');
+              }
+          }
+        }}}
+  })
+}

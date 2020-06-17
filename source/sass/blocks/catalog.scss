@@ -1,6 +1,6 @@
 .catalog {
   background-color: #f8f9fc;
-  padding-bottom: 122px;
+  padding-bottom: 82px;
   position: relative;
 }
 
@@ -34,6 +34,8 @@
 
 .catalog__item {
   margin-right: 40px;
+  margin-bottom: 40px;
+  flex-grow: 1;
 }
 
 .catalog__wrapper h2 {
@@ -64,6 +66,7 @@
   padding-bottom: 12px;
   justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
   width: fit-content;
 }
 
@@ -102,7 +105,7 @@
 }
 
 .catalog__items-group {
-  justify-content: center;
+  justify-content: flex-start;
   display: flex;
   flex-wrap: wrap;
   margin-right: -49px;

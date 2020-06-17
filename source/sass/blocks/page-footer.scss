@@ -67,6 +67,10 @@
     padding-bottom: 45px;
   }
 
+  .page-footer__nav-list {
+    padding-top: 5px;
+  }
+
   .page-footer__socials {
     width: 15%;
   }
@@ -83,6 +87,14 @@
 
   .page-footer__nav {
     width: 59%;
+  }
+
+  .page-footer__nav-item {
+    padding-bottom: 30px;
+  }
+
+  .page-footer__inner {
+    align-items: flex-start;
   }
 }
 
